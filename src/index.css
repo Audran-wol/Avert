@@ -1,0 +1,130 @@
+@import "tailwindcss";
+@import "maplibre-gl/dist/maplibre-gl.css";
+
+/* MineOps design tokens (UI/UX Blueprint §6) exposed as Tailwind theme colors */
+@theme {
+  --color-space: #05070a;
+  --color-bg: #070a0e;
+  --color-panel: #0b1016;
+  --color-elevated: #101720;
+  --color-hover: #151d27;
+
+  --color-ink: #f3f6f8;
+  --color-muted: #9aa7b3;
+  --color-faint: #667482;
+
+  --color-cyan: #42c8e8;
+  --color-low: #31c48d;
+  --color-moderate: #e3b341;
+  --color-high: #f28a35;
+  --color-critical: #ee4b4b;
+
+  /* light "paper" surfaces for the analytics panel + floating card (ref look) */
+  --color-paper: #f6f6f3;
+  --color-paper-card: #ffffff;
+  --color-paper-muted: #eef0ea;
+  --color-paper-ink: #161817;
+  --color-paper-sub: #697179;
+  --color-paper-faint: #949aa0;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+/* section label on light surfaces */
+.label-dark {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-paper-faint);
+}
+
+/* restyle MapLibre scale control to match the UI */
+.maplibregl-ctrl-scale {
+  background: rgba(11, 16, 22, 0.75) !important;
+  color: #c7d0d8 !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  border-top: none !important;
+  font-family: var(--font-mono);
+  font-size: 9px !important;
+  border-radius: 3px;
+  padding: 1px 5px !important;
+  margin: 0 0 6px 10px !important;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* thin section labels */
+.label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-faint);
+}
+
+/* strip MapLibre's default control chrome so we can restyle */
+.maplibregl-ctrl-attrib {
+  background: rgba(7, 10, 14, 0.7) !important;
+  color: var(--color-faint) !important;
+  font-size: 9px !important;
+}
+.maplibregl-ctrl-attrib a {
+  color: var(--color-muted) !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+}
+
+/* community hover tooltip */
+.fo-popup .maplibregl-popup-content {
+  background: #0b1016;
+  color: #f3f6f8;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 5px 9px;
+  font-size: 11px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-sans);
+}
+.fo-popup .maplibregl-popup-content b { font-weight: 600; }
+.fo-popup .maplibregl-popup-content i { color: #9aa7b3; font-style: normal; text-transform: capitalize; }
+.fo-popup .fo-tip-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.fo-popup .maplibregl-popup-tip { border-top-color: #0b1016 !important; border-bottom-color: #0b1016 !important; }
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}

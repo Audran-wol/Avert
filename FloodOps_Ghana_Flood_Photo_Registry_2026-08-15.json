@@ -1,0 +1,2559 @@
+{
+  "registry_version": "1.0.0",
+  "generated_at": "2026-08-15",
+  "project": "FloodOps AI",
+  "dataset_name": "Ghana Flood Photo Evidence Registry",
+  "scope": {
+    "country": "Ghana",
+    "purpose": "Map-point historical photo evidence for flood events, infrastructure impacts, dam releases and recurrent urban flooding.",
+    "initial_requested_locations": [
+      "Mepe & Battor — Lower Volta — October 2023 Akosombo/Kpong spillage",
+      "Sogakope — Volta Region — 2023 floods",
+      "Bawku/Pwalugu / Upper East — 2018 Bagre Dam spillage",
+      "Accra — 3 June 2015 flood"
+    ],
+    "expanded_locations_or_contexts": [
+      "Accra recurrent floods (2022, 2023, 2026)",
+      "Tazika/Bagtua bridge washout — Upper East — 2023",
+      "Walewale–Nalerigu / Tiguri Gbani Damba — 2023",
+      "Akosombo historical spillway releases — 2010",
+      "Tamne irrigation dam / Garu–Pusiga–Tempane",
+      "Afram Plains / Bagre-related reports",
+      "Keta candidate imagery",
+      "Greater Accra flash-flood evidence"
+    ]
+  },
+  "important_policy": {
+    "hotlinking_is_not_the_same_as_reuse_permission": true,
+    "production_rule": "Display/rehost only assets with verified rights that permit the intended FloodOps use. A technically working image URL is not itself a license.",
+    "wikimedia_rule": "For CC BY-SA assets, preserve creator attribution, source page, license URL and modification notice where applicable. Prefer self-hosting/caching an allowed copy over depending on permanent third-party hotlinks.",
+    "restricted_media_rule": "For UNICEF, UN, ModernGhana, Prime News and other restricted/unknown-rights sources, store evidence metadata and source-page URLs; do not mirror/proxy/display the photograph in production without rights clearance.",
+    "geolocation_rule": "Never assign an event-region image to a specific town unless the caption/metadata supports that town. Keep geo_confidence explicit."
+  },
+  "recommended_photo_schema": {
+    "minimum_fields": [
+      "id",
+      "country",
+      "region",
+      "district",
+      "location_name",
+      "coordinates",
+      "event",
+      "media.direct_image_url",
+      "media.source_page_url",
+      "credit",
+      "rights",
+      "verification",
+      "evidence_type",
+      "usage"
+    ],
+    "geo_confidence_values": [
+      "exact_camera_coordinates",
+      "exact_named_location",
+      "exact_communities",
+      "city",
+      "district_or_road_corridor",
+      "region",
+      "event_region",
+      "country",
+      "unknown"
+    ],
+    "rights_status_values": [
+      "verified_open",
+      "verified_restricted",
+      "unknown"
+    ],
+    "display_rule": "display_ready must be true only when individual-file rights and source metadata have been verified."
+  },
+  "counts": {
+    "fully_described_assets": 24,
+    "source_collections": 12,
+    "commons_discovery_candidates_needing_individual_verification": 50,
+    "other_evidence_candidates": 4,
+    "total_records_and_candidates": 90
+  },
+  "assets": [
+    {
+      "id": "GH-ACC-2026-WC-001",
+      "country": "Ghana",
+      "region": "Greater Accra",
+      "district": null,
+      "location_name": "Accra",
+      "coordinates": {
+        "lat": 5.64788,
+        "lng": 0.236248,
+        "type": "camera_exact",
+        "confidence": "exact_camera_location"
+      },
+      "event": {
+        "name": "Accra urban flood / rainy-season flooding, 29 June 2026",
+        "capture_date": "2026-06-29T08:23:25",
+        "mechanism": "urban-pluvial",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Flooding in Accra, Ghana.jpg",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flooding_in_Accra%2C_Ghana.jpg",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Accra,_Ghana.jpg",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Accra,_Ghana.jpg",
+        "width_px": 4000,
+        "height_px": 3000,
+        "file_size": "4.25 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Flooding at a taxi rank in Accra disrupting commuters.",
+      "credit": {
+        "photographer": "Nanakwafoa",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "Nanakwafoa / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-4.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "exact_camera_coordinates",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "flood-water",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": "Excellent FloodOps map-point asset because Wikimedia provides exact camera coordinates."
+    },
+    {
+      "id": "GH-ACC-2023-WC-001",
+      "country": "Ghana",
+      "region": "Greater Accra",
+      "district": null,
+      "location_name": "Accra",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "city"
+      },
+      "event": {
+        "name": "Accra downpour flooding, 18 March 2023",
+        "capture_date": "2023-03-18",
+        "mechanism": "urban-pluvial",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Flooding in Ghana 12.jpg",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flooding_in_Ghana_12.jpg",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Ghana_12.jpg",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Ghana_12.jpg",
+        "width_px": 5184,
+        "height_px": 3456,
+        "file_size": "1.39 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Part of Accra flooded during a downpour in Ghana.",
+      "credit": {
+        "photographer": "Fquasie",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "Fquasie / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-4.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "city",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "flood-water",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": null
+    },
+    {
+      "id": "GH-ACC-2022-WC-001",
+      "country": "Ghana",
+      "region": "Greater Accra",
+      "district": null,
+      "location_name": "Accra",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "city"
+      },
+      "event": {
+        "name": "Accra rainy-season flooding, 27 May 2022",
+        "capture_date": "2022-05-27",
+        "mechanism": "urban-pluvial",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Flooding in Accra 12.jpg",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flooding_in_Accra_12.jpg",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Accra_12.jpg",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Accra_12.jpg",
+        "width_px": 5184,
+        "height_px": 3456,
+        "file_size": "1.63 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Part of a road flooded during the rainy season in Accra.",
+      "credit": {
+        "photographer": "Nana Darkoaaa",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "Nana Darkoaaa / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-4.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "city",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "road-impact",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": null
+    },
+    {
+      "id": "GH-ACC-2022-WC-002",
+      "country": "Ghana",
+      "region": "Greater Accra",
+      "district": null,
+      "location_name": "Accra",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "city"
+      },
+      "event": {
+        "name": "Accra flooding after rainfall, 28 June 2022",
+        "capture_date": "2022-06-28",
+        "mechanism": "urban-pluvial",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Floods after rains in Accra.jpg",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Floods_after_rains_in_Accra.jpg",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Floods_after_rains_in_Accra.jpg",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Floods_after_rains_in_Accra.jpg",
+        "width_px": 4160,
+        "height_px": 3120,
+        "file_size": "4.68 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Floods after rains in Accra.",
+      "credit": {
+        "photographer": "Gkbediako",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "Gkbediako / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-4.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "city",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "flood-water",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": null
+    },
+    {
+      "id": "GH-ACC-2022-WC-003",
+      "country": "Ghana",
+      "region": "Greater Accra",
+      "district": null,
+      "location_name": "Accra",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "city"
+      },
+      "event": {
+        "name": "Accra flooding, 18 June 2022",
+        "capture_date": "2022-06-18",
+        "mechanism": "urban-pluvial",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Accra flooding.jpg",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Accra_flooding.jpg",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Accra_flooding.jpg",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Accra_flooding.jpg",
+        "width_px": 5184,
+        "height_px": 3456,
+        "file_size": "1.65 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Part of Ghana's capital flooded during a downpour.",
+      "credit": {
+        "photographer": "Fquasie",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "Fquasie / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-4.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "city",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "flood-water",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": null
+    },
+    {
+      "id": "GH-ACC-2022-WC-004",
+      "country": "Ghana",
+      "region": "Greater Accra",
+      "district": null,
+      "location_name": "Accra",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "city"
+      },
+      "event": {
+        "name": "Accra flooding, 18 June 2022",
+        "capture_date": "2022-06-18",
+        "mechanism": "urban-pluvial",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Flooding in Accra 4.jpg",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Flooding_in_Accra_4.jpg",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Accra_4.jpg",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Accra_4.jpg",
+        "width_px": 5184,
+        "height_px": 3456,
+        "file_size": "8.17 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Vehicles moving through floodwater in Accra.",
+      "credit": {
+        "photographer": "Fquasie",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "Fquasie / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-4.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "city",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "road-impact",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": null
+    },
+    {
+      "id": "GH-ACC-2022-WC-005",
+      "country": "Ghana",
+      "region": "Greater Accra",
+      "district": null,
+      "location_name": "Accra / Ghana",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "city_or_region"
+      },
+      "event": {
+        "name": "Ghana rainfall flooding, 28 June 2022",
+        "capture_date": "2022-06-28",
+        "mechanism": "urban-pluvial",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Flooding after rainfall in Ghana.jpg",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flooding_after_rainfall_in_Ghana.jpg",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_after_rainfall_in_Ghana.jpg",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_after_rainfall_in_Ghana.jpg",
+        "width_px": 5184,
+        "height_px": 3456,
+        "file_size": "7.24 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Flooding after rainfall in Ghana; discovered in the Ghana environmental-awareness flood collection.",
+      "credit": {
+        "photographer": "Gkbediako",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "Gkbediako / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-4.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "city_or_region",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "flood-water",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": "Location label should be rechecked on the file page before using as an exact Accra point."
+    },
+    {
+      "id": "GH-NE-2023-WC-001",
+      "country": "Ghana",
+      "region": "North East",
+      "district": null,
+      "location_name": "Walewale–Nalerigu road / West Mamprusi Municipality",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "district_or_road_corridor"
+      },
+      "event": {
+        "name": "Tiguri Gbani Damba flood, 9 August 2023",
+        "capture_date": "2023-08-09",
+        "mechanism": "dam-or-local-waterbody-overflow",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "The Tiguri Gbani Damba flood.jpg",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/The_Tiguri_Gbani_Damba_flood.jpg",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Tiguri_Gbani_Damba_flood.jpg",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:The_Tiguri_Gbani_Damba_flood.jpg",
+        "width_px": 720,
+        "height_px": 540,
+        "file_size": "199 KB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Tinguri/Tiguri Gbani Damba flooding caused a breakdown/cut on the Walewale–Nalerigu road.",
+      "credit": {
+        "photographer": "Ibn Pasiba",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "Ibn Pasiba / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-4.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "district_or_road_corridor",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "road-impact",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": "Useful infrastructure-isolation evidence."
+    },
+    {
+      "id": "GH-UE-TBZ-2023-WC-001",
+      "country": "Ghana",
+      "region": "Upper East",
+      "district": null,
+      "location_name": "Tazika / Bagtua, Kassena Nankana West District",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "exact_communities"
+      },
+      "event": {
+        "name": "Tazika–Bagtua flood/bridge washout, 24 July 2023",
+        "capture_date": "2023-07-24",
+        "mechanism": "flood / runoff",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Broken bridge linking the Tazika-Bagtua communities 01.jpg",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Broken_bridge_linking_the_Tazika-Bagtua_communities_01.jpg",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Broken_bridge_linking_the_Tazika-Bagtua_communities_01.jpg",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Broken_bridge_linking_the_Tazika-Bagtua_communities_01.jpg",
+        "width_px": 5184,
+        "height_px": 3456,
+        "file_size": "3.67 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Bridge linking Tazika/Bagtua communities to the rest of Kassena Nankana West District washed away by flooding.",
+      "credit": {
+        "photographer": "OJjnr",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "OJjnr / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-4.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "exact_communities",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "bridge-impact",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": "Series of five infrastructure-impact photographs from the same event/context."
+    },
+    {
+      "id": "GH-UE-TBZ-2023-WC-002",
+      "country": "Ghana",
+      "region": "Upper East",
+      "district": null,
+      "location_name": "Tazika / Bagtua, Kassena Nankana West District",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "exact_communities"
+      },
+      "event": {
+        "name": "Tazika–Bagtua flood/bridge washout, 24 July 2023",
+        "capture_date": "2023-07-24",
+        "mechanism": "flood / runoff",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Broken bridge linking the Tazika-Bagtua communities 02.jpg",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Broken_bridge_linking_the_Tazika-Bagtua_communities_02.jpg",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Broken_bridge_linking_the_Tazika-Bagtua_communities_02.jpg",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Broken_bridge_linking_the_Tazika-Bagtua_communities_02.jpg",
+        "width_px": 5184,
+        "height_px": 3456,
+        "file_size": "3.45 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Bridge linking Tazika/Bagtua communities to the rest of Kassena Nankana West District washed away by flooding.",
+      "credit": {
+        "photographer": "OJjnr",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "OJjnr / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-4.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "exact_communities",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "bridge-impact",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": "Series of five infrastructure-impact photographs from the same event/context."
+    },
+    {
+      "id": "GH-UE-TBZ-2023-WC-003",
+      "country": "Ghana",
+      "region": "Upper East",
+      "district": null,
+      "location_name": "Tazika / Bagtua, Kassena Nankana West District",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "exact_communities"
+      },
+      "event": {
+        "name": "Tazika–Bagtua flood/bridge washout, 24 July 2023",
+        "capture_date": "2023-07-24",
+        "mechanism": "flood / runoff",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Broken bridge linking the Tazika-Bagtua communities 03.jpg",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Broken_bridge_linking_the_Tazika-Bagtua_communities_03.jpg",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Broken_bridge_linking_the_Tazika-Bagtua_communities_03.jpg",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Broken_bridge_linking_the_Tazika-Bagtua_communities_03.jpg",
+        "width_px": 5184,
+        "height_px": 3456,
+        "file_size": "4.36 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Bridge linking Tazika/Bagtua communities to the rest of Kassena Nankana West District washed away by flooding.",
+      "credit": {
+        "photographer": "OJjnr",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "OJjnr / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-4.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "exact_communities",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "bridge-impact",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": "Series of five infrastructure-impact photographs from the same event/context."
+    },
+    {
+      "id": "GH-UE-TBZ-2023-WC-004",
+      "country": "Ghana",
+      "region": "Upper East",
+      "district": null,
+      "location_name": "Tazika / Bagtua, Kassena Nankana West District",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "exact_communities"
+      },
+      "event": {
+        "name": "Tazika–Bagtua flood/bridge washout, 24 July 2023",
+        "capture_date": "2023-07-24",
+        "mechanism": "flood / runoff",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Broken bridge linking the Tazika-Bagtua communities 04.jpg",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Broken_bridge_linking_the_Tazika-Bagtua_communities_04.jpg",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Broken_bridge_linking_the_Tazika-Bagtua_communities_04.jpg",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Broken_bridge_linking_the_Tazika-Bagtua_communities_04.jpg",
+        "width_px": 5184,
+        "height_px": 3456,
+        "file_size": "4.22 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Bridge linking Tazika/Bagtua communities to the rest of Kassena Nankana West District washed away by flooding.",
+      "credit": {
+        "photographer": "OJjnr",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "OJjnr / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-4.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "exact_communities",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "bridge-impact",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": "Series of five infrastructure-impact photographs from the same event/context."
+    },
+    {
+      "id": "GH-UE-TBZ-2023-WC-005",
+      "country": "Ghana",
+      "region": "Upper East",
+      "district": null,
+      "location_name": "Tazika / Bagtua, Kassena Nankana West District",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "exact_communities"
+      },
+      "event": {
+        "name": "Tazika–Bagtua flood/bridge washout, 24 July 2023",
+        "capture_date": "2023-07-24",
+        "mechanism": "flood / runoff",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Broken bridge linking the Tazika-Bagtua communities 05.jpg",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Broken_bridge_linking_the_Tazika-Bagtua_communities_05.jpg",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Broken_bridge_linking_the_Tazika-Bagtua_communities_05.jpg",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Broken_bridge_linking_the_Tazika-Bagtua_communities_05.jpg",
+        "width_px": 5184,
+        "height_px": 3456,
+        "file_size": "3.85 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Bridge linking Tazika/Bagtua communities to the rest of Kassena Nankana West District washed away by flooding.",
+      "credit": {
+        "photographer": "OJjnr",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "OJjnr / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-4.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "exact_communities",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "bridge-impact",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": "Series of five infrastructure-impact photographs from the same event/context."
+    },
+    {
+      "id": "GH-AKO-2010-WC-001",
+      "country": "Ghana",
+      "region": "Eastern / Volta River",
+      "district": null,
+      "location_name": "Akosombo Dam",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "exact_infrastructure"
+      },
+      "event": {
+        "name": "Akosombo Dam high-water spill, 20 November 2010",
+        "capture_date": "2010-11-20",
+        "mechanism": "dam-release",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Akosombo Dam is spilling water, Ghana.JPG",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Akosombo_Dam_is_spilling_water%2C_Ghana.JPG",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Akosombo_Dam_is_spilling_water,_Ghana.JPG",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Akosombo_Dam_is_spilling_water,_Ghana.JPG",
+        "width_px": 3648,
+        "height_px": 2432,
+        "file_size": "1.28 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Akosombo Dam spilling water through six floodgates because of an all-time-high reservoir level.",
+      "credit": {
+        "photographer": "ZSM",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "ZSM / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-3.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": true,
+        "direct_url_status": "verified",
+        "date_confidence": "exact",
+        "geo_confidence": "exact_infrastructure",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "dam-release",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": "Direct upload.wikimedia.org URL was independently rendered during research."
+    },
+    {
+      "id": "GH-AKO-2010-WC-002",
+      "country": "Ghana",
+      "region": "Eastern / Volta River",
+      "district": null,
+      "location_name": "Akosombo Dam",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "exact_infrastructure"
+      },
+      "event": {
+        "name": "Akosombo Dam high-water spill, 6 November 2010",
+        "capture_date": "2010-11-06",
+        "mechanism": "dam-release",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Akosombo Dam is spilling water.JPG",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Akosombo_Dam_is_spilling_water.JPG",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Akosombo_Dam_is_spilling_water.JPG",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Akosombo_Dam_is_spilling_water.JPG",
+        "width_px": 2432,
+        "height_px": 3648,
+        "file_size": "1.30 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Akosombo Dam spilling water because of dangerously high reservoir level.",
+      "credit": {
+        "photographer": "ZSM",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "ZSM / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-3.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "exact_infrastructure",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "dam-release",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": null
+    },
+    {
+      "id": "GH-AKO-2010-WC-003",
+      "country": "Ghana",
+      "region": "Eastern / Volta River",
+      "district": null,
+      "location_name": "Akosombo Dam",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "exact_infrastructure"
+      },
+      "event": {
+        "name": "Akosombo Dam high-water spill, 6 November 2010",
+        "capture_date": "2010-11-06",
+        "mechanism": "dam-release",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Akosombo Dam spilling water.JPG",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Akosombo_Dam_spilling_water.JPG",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Akosombo_Dam_spilling_water.JPG",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Akosombo_Dam_spilling_water.JPG",
+        "width_px": 3648,
+        "height_px": 2432,
+        "file_size": "1.50 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Akosombo Dam spilling water through four floodgates because of dangerously high reservoir level.",
+      "credit": {
+        "photographer": "ZSM",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "ZSM / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-3.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "exact_infrastructure",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "dam-release",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": null
+    },
+    {
+      "id": "GH-AKO-2010-WC-004",
+      "country": "Ghana",
+      "region": "Eastern / Volta River",
+      "district": null,
+      "location_name": "Akosombo Dam",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "exact_infrastructure"
+      },
+      "event": {
+        "name": "Akosombo Dam high-water spill, 6 November 2010",
+        "capture_date": "2010-11-06",
+        "mechanism": "dam-release",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": "Akosombo dam spilling water.JPG",
+        "mime_type": "image/jpeg",
+        "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Akosombo_dam_spilling_water.JPG",
+        "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Akosombo_dam_spilling_water.JPG",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Akosombo_dam_spilling_water.JPG",
+        "width_px": 3648,
+        "height_px": 1825,
+        "file_size": "1.69 MB",
+        "hosting_domain": "upload.wikimedia.org"
+      },
+      "caption_or_description": "Akosombo Dam spilling because of the then highest recorded reservoir water level.",
+      "credit": {
+        "photographer": "ZSM",
+        "agency": "Wikimedia Commons / self-published",
+        "display_credit": "ZSM / Wikimedia Commons"
+      },
+      "rights": {
+        "license_id": "CC-BY-SA-3.0",
+        "license_name": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "rights_status": "verified_open",
+        "reuse_allowed": true,
+        "commercial_reuse_allowed": true,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": true,
+        "permission_required": false
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "canonical_wikimedia_original_url_derived_from_filename",
+        "date_confidence": "exact",
+        "geo_confidence": "exact_infrastructure",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "dam-release",
+      "usage": {
+        "display_ready": true,
+        "recommended_ui_behavior": "embed_with_attribution",
+        "recommended_asset_strategy": "self-host/cache permitted copy with attribution; preserve original source and license metadata rather than relying on permanent hotlinking"
+      },
+      "research_notes": null
+    },
+    {
+      "id": "GH-MEPE-2023-UNICEF-001",
+      "country": "Ghana",
+      "region": "Volta",
+      "district": "North Tongu / Lower Volta affected corridor",
+      "location_name": "Mepe / Lower Volta affected communities",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "event_region_or_mepe_context"
+      },
+      "event": {
+        "name": "Akosombo/Kpong dam spillage floods",
+        "capture_date": "2023",
+        "event_window": "October 2023",
+        "mechanism": "dam-release",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "filename": null,
+        "direct_image_url": "https://www.unicef.org/ghana/sites/unicef.org.ghana/files/styles/media_large_image/public/NIPAH_UNICEF_GHANA_AKOSOMBO_DAM_%20SPILLAGE_COMMUNITIES20231020_118_0.JPG.webp?itok=KvL2q8B2",
+        "stable_file_redirect_url": null,
+        "source_page_url": "https://www.unicef.org/ghana/stories/ghana-floods-two-girls-journey-resilience",
+        "supporting_source_page_url": "https://www.unicef.org/ghana/blog/akosombo-dam-spillage",
+        "hosting_domain": "unicef.org"
+      },
+      "caption_or_description": "UNICEF photo of a community affected by the 2023 Akosombo Dam spillage; UNICEF's Ghana materials also explicitly document a house in Mepe submerged in water.",
+      "credit": {
+        "photographer": "Dennis Nipah / UNICEF (for the direct-photo series context)",
+        "agency": "UNICEF",
+        "display_credit": "UNICEF / Nipah / 2023"
+      },
+      "rights": {
+        "license_id": "PERMISSION-REQUIRED",
+        "license_name": "Copyrighted / permission required for FloodOps reuse",
+        "license_url": "https://www.unicef.org/legal",
+        "rights_status": "verified_restricted",
+        "reuse_allowed": false,
+        "commercial_reuse_allowed": false,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": false,
+        "permission_required": true,
+        "rights_note": "UNICEF reserves copyright in photographs; production reproduction/electronic reuse generally requires permission. Keep as evidence/source link unless permission is obtained."
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": true,
+        "direct_url_status": "verified_working_during_research",
+        "date_confidence": "event_window",
+        "geo_confidence": "event_region_or_mepe_context",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "flood-water",
+      "usage": {
+        "display_ready": false,
+        "recommended_ui_behavior": "link_to_source_or_show_metadata_only_until_permission",
+        "recommended_asset_strategy": "do_not_mirror_or_proxy_without_permission"
+      },
+      "research_notes": "Do not label this exact frame as Battor unless the source caption identifies Battor; UNICEF documents Battor as affected but not every frame is individually geolocated."
+    },
+    {
+      "id": "GH-ACC-2015-MG-001",
+      "country": "Ghana",
+      "region": "Greater Accra",
+      "district": null,
+      "location_name": "Accra",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "city"
+      },
+      "event": {
+        "name": "Accra June 2015 flood",
+        "capture_date": "2015-06-03/2015-06-04",
+        "mechanism": "urban-pluvial / drainage overflow",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "direct_image_url": "https://cdn.modernghana.com/content__/640/457/wbr1uhg76o_fk04eqpdcw_accrarains.jpg",
+        "source_page_url": "https://www.modernghana.com/news/621279/torrential-rains-hit-accra.html",
+        "hosting_domain": "cdn.modernghana.com"
+      },
+      "caption_or_description": "Flooded Accra road/traffic during the June 2015 torrential-rain event.",
+      "credit": {
+        "photographer": null,
+        "agency": "GNA / hosted by ModernGhana",
+        "display_credit": "GNA / ModernGhana"
+      },
+      "rights": {
+        "license_id": "PERMISSION-REQUIRED",
+        "license_name": "Copyrighted / permission required for FloodOps reuse",
+        "license_url": "https://www.modernghana.com/terms/?gender=&menu_id=11&sub_menu_id=275",
+        "rights_status": "verified_restricted",
+        "reuse_allowed": false,
+        "commercial_reuse_allowed": false,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": false,
+        "permission_required": true,
+        "rights_note": "ModernGhana terms restrict copying/reproduction/republishing outside personal non-commercial use without permission."
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": true,
+        "direct_url_status": "verified_by_image_search_result",
+        "date_confidence": "event_window",
+        "geo_confidence": "city",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "road-impact",
+      "usage": {
+        "display_ready": false,
+        "recommended_ui_behavior": "source-link_only_until_permission",
+        "recommended_asset_strategy": "do_not_mirror_or_proxy_without_permission"
+      }
+    },
+    {
+      "id": "GH-PWA-2018-MG-001",
+      "country": "Ghana",
+      "region": "Upper East",
+      "district": "Talensi",
+      "location_name": "Pwalugu / White Volta Basin",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "exact_named_location"
+      },
+      "event": {
+        "name": "Bagre Dam spillage / Upper East flooding",
+        "capture_date": "2018-09-04 approximately",
+        "event_window": "2018-08-31 to early September 2018",
+        "mechanism": "dam-spillage + seasonal rainfall + elevated river levels",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "direct_image_url": "https://cdn.modernghana.com/story_/926/499/952018114136_floodarea.jpg",
+        "source_page_url": "https://www.modernghana.com/news/880073/bagre-dam-floods-homes.html",
+        "hosting_domain": "cdn.modernghana.com"
+      },
+      "caption_or_description": "Source caption: a section of the flood area at Pwalugu (spelled 'Pwualugu' in the source).",
+      "credit": {
+        "photographer": null,
+        "agency": "ModernGhana / article source not separately licensed",
+        "display_credit": "ModernGhana"
+      },
+      "rights": {
+        "license_id": "PERMISSION-REQUIRED",
+        "license_name": "Copyrighted / permission required for FloodOps reuse",
+        "license_url": "https://www.modernghana.com/terms/?gender=&menu_id=11&sub_menu_id=275",
+        "rights_status": "verified_restricted",
+        "reuse_allowed": false,
+        "commercial_reuse_allowed": false,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": false,
+        "permission_required": true,
+        "rights_note": "Use as evidence/source link only unless permission is obtained."
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": false,
+        "direct_url_status": "candidate_direct_url_discovered_from_site; not independently fetched in final verification",
+        "date_confidence": "event_window",
+        "geo_confidence": "exact_named_location",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "flood-water / farmland-impact",
+      "usage": {
+        "display_ready": false,
+        "recommended_ui_behavior": "source-link_only_until_permission",
+        "recommended_asset_strategy": "do_not_mirror_or_proxy_without_permission"
+      }
+    },
+    {
+      "id": "GH-UE-2018-PRIME-001",
+      "country": "Ghana",
+      "region": "Upper East",
+      "district": null,
+      "location_name": "Upper East Region",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "region"
+      },
+      "event": {
+        "name": "2018 Bagre Dam flood aftermath",
+        "capture_date": "2018-09",
+        "mechanism": "dam-spillage / riverine",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "direct_image_url": "https://www.primenewsghana.com/images/2018/sept/17/1024x576_541853.jpg",
+        "source_page_url": "https://www.primenewsghana.com/general-news/ue-r-cholera-outbreak-loom-after-bagre-dam-flooding-recedes.html",
+        "hosting_domain": "primenewsghana.com"
+      },
+      "caption_or_description": "Residents moving through floodwater after Bagre Dam-related flooding in the Upper East Region.",
+      "credit": {
+        "photographer": null,
+        "agency": "Prime News Ghana",
+        "display_credit": "Prime News Ghana"
+      },
+      "rights": {
+        "license_id": "PERMISSION-REQUIRED",
+        "license_name": "Copyrighted / permission required for FloodOps reuse",
+        "license_url": "https://www.primenewsghana.com/terms-conditions.html",
+        "rights_status": "verified_restricted",
+        "reuse_allowed": false,
+        "commercial_reuse_allowed": false,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": false,
+        "permission_required": true,
+        "rights_note": "Prime News Ghana terms reserve site/image rights and allow personal non-commercial reproduction only unless approval is obtained."
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": true,
+        "direct_url_status": "verified_by_image_search_result",
+        "date_confidence": "article/event_window",
+        "geo_confidence": "region",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "flood-water / displacement",
+      "usage": {
+        "display_ready": false,
+        "recommended_ui_behavior": "source-link_only_until_permission",
+        "recommended_asset_strategy": "do_not_mirror_or_proxy_without_permission"
+      }
+    },
+    {
+      "id": "GH-AFRAM-2020-PRIME-001",
+      "country": "Ghana",
+      "region": "Eastern",
+      "district": "Kwahu Afram Plains North",
+      "location_name": "Afram Plains",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "district"
+      },
+      "event": {
+        "name": "2020 Bagre Dam spillage-related flooding / Afram Plains",
+        "capture_date": "2020",
+        "mechanism": "dam-spillage / riverine",
+        "event_match_confidence": "article_match"
+      },
+      "media": {
+        "type": "photo",
+        "direct_image_url": "https://www.primenewsghana.com/images/2020/jun/BAGRE-DAM.jpg",
+        "source_page_url": "https://www.primenewsghana.com/general-news/houses-farms-destroyed-at-afram-plains-after-bagre-dam-spillage.html",
+        "hosting_domain": "primenewsghana.com"
+      },
+      "caption_or_description": "Floodwater surrounding homes/trees in the article's Bagre Dam spillage report.",
+      "credit": {
+        "photographer": null,
+        "agency": "Prime News Ghana",
+        "display_credit": "Prime News Ghana"
+      },
+      "rights": {
+        "license_id": "PERMISSION-REQUIRED",
+        "license_name": "Copyrighted / permission required for FloodOps reuse",
+        "license_url": "https://www.primenewsghana.com/terms-conditions.html",
+        "rights_status": "verified_restricted",
+        "reuse_allowed": false,
+        "commercial_reuse_allowed": false,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": false,
+        "permission_required": true,
+        "rights_note": "Production reuse requires permission under the site's terms."
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": true,
+        "direct_url_status": "verified_by_image_search_result",
+        "date_confidence": "article/event_window",
+        "geo_confidence": "district",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "building-impact / flood-water",
+      "usage": {
+        "display_ready": false,
+        "recommended_ui_behavior": "source-link_only_until_permission",
+        "recommended_asset_strategy": "do_not_mirror_or_proxy_without_permission"
+      }
+    },
+    {
+      "id": "GH-GARU-2021-MG-001",
+      "country": "Ghana",
+      "region": "Upper East",
+      "district": "Garu / Pusiga / Tempane",
+      "location_name": "Tamne irrigation dam affected communities",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "multi-district"
+      },
+      "event": {
+        "name": "Tamne irrigation dam flooding",
+        "capture_date": "2021",
+        "mechanism": "dam/irrigation-system overflow + tributary inflows",
+        "event_match_confidence": "high"
+      },
+      "media": {
+        "type": "photo",
+        "direct_image_url": "https://cdn.modernghana.com/amp/700/420/818202145428-k5fri7t2h0-img_3030.jpg",
+        "source_page_url": "https://www.modernghana.com/news/1098921/residents-cry-for-help-as-tamne-irrigation-dam.html",
+        "hosting_domain": "cdn.modernghana.com"
+      },
+      "caption_or_description": "Residents at a severely flooded Tamne irrigation-dam area.",
+      "credit": {
+        "photographer": null,
+        "agency": "ModernGhana",
+        "display_credit": "ModernGhana"
+      },
+      "rights": {
+        "license_id": "PERMISSION-REQUIRED",
+        "license_name": "Copyrighted / permission required for FloodOps reuse",
+        "license_url": "https://www.modernghana.com/terms/?gender=&menu_id=11&sub_menu_id=275",
+        "rights_status": "verified_restricted",
+        "reuse_allowed": false,
+        "commercial_reuse_allowed": false,
+        "attribution_required": true,
+        "share_alike_required_for_adaptations": false,
+        "permission_required": true
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": true,
+        "direct_url_verified_by_http_fetch": true,
+        "direct_url_status": "verified_by_image_search_result",
+        "date_confidence": "article/event_window",
+        "geo_confidence": "multi-district",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "flood-water / community-impact",
+      "usage": {
+        "display_ready": false,
+        "recommended_ui_behavior": "source-link_only_until_permission",
+        "recommended_asset_strategy": "do_not_mirror_or_proxy_without_permission"
+      }
+    },
+    {
+      "id": "GH-GA-FLASH-2018-GRAPHIC-001",
+      "country": "Ghana",
+      "region": "Greater Accra",
+      "district": null,
+      "location_name": "Greater Accra",
+      "coordinates": {
+        "lat": null,
+        "lng": null,
+        "type": null,
+        "confidence": "region"
+      },
+      "event": {
+        "name": "Greater Accra flash flood event",
+        "capture_date": "2018",
+        "mechanism": "flash / urban-pluvial",
+        "event_match_confidence": "article_match"
+      },
+      "media": {
+        "type": "photo",
+        "direct_image_url": "https://www.graphic.com.gh/images/2018/jun/20/floods4.jpg",
+        "source_page_url": "https://www.graphic.com.gh/news/general-news/flash-floods-leave-three-dead-in-greater-accra.html",
+        "hosting_domain": "graphic.com.gh"
+      },
+      "caption_or_description": "Flooded street in Greater Accra during a flash-flood report.",
+      "credit": {
+        "photographer": null,
+        "agency": "Graphic Online",
+        "display_credit": "Graphic Online"
+      },
+      "rights": {
+        "license_id": "UNKNOWN",
+        "license_name": "Reuse status not verified",
+        "license_url": null,
+        "rights_status": "unknown",
+        "reuse_allowed": null,
+        "commercial_reuse_allowed": null,
+        "attribution_required": null,
+        "share_alike_required_for_adaptations": null,
+        "permission_required": null,
+        "rights_note": "No open license was verified during this research. Treat as evidence-only until permission/licensing is confirmed."
+      },
+      "verification": {
+        "source_page_verified": true,
+        "license_verified": false,
+        "direct_url_verified_by_http_fetch": true,
+        "direct_url_status": "verified_by_image_search_result",
+        "date_confidence": "article/event_window",
+        "geo_confidence": "region",
+        "verified_at": "2026-08-15"
+      },
+      "evidence_type": "road-impact / flood-water",
+      "usage": {
+        "display_ready": false,
+        "recommended_ui_behavior": "do_not_embed_until_rights_verified",
+        "recommended_asset_strategy": "source-link only"
+      }
+    }
+  ],
+  "source_collections": [
+    {
+      "id": "COLL-COMMONS-FLOODS-GHANA",
+      "name": "Wikimedia Commons — Floods in Ghana",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Floods_in_Ghana",
+      "source_type": "open-media-category",
+      "contains_many_images": true,
+      "rights_note": "Each file has its own license; verify the individual file page before reuse.",
+      "recommended_ingestion": "Enumerate files via Wikimedia API/categorymembers; fetch imageinfo/extmetadata; ingest only files whose individual licenses meet FloodOps policy."
+    },
+    {
+      "id": "COLL-COMMONS-FLOOD-DAMAGE-GHANA",
+      "name": "Wikimedia Commons — Flood damage in Ghana",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Flood_damage_in_Ghana",
+      "source_type": "open-media-category",
+      "known_count_at_verification": 35,
+      "contains_many_images": true,
+      "rights_note": "Individual files must be checked; many are CC BY-SA.",
+      "recommended_ingestion": "High priority for infrastructure-impact photos such as washed-out bridges and damaged homes."
+    },
+    {
+      "id": "COLL-COMMONS-ENV-GHANA",
+      "name": "Wikimedia Commons — Environmental Awareness in Ghana",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "source_type": "open-media-category",
+      "contains_many_images": true,
+      "rights_note": "Mixed file-level metadata; verify individual licenses.",
+      "recommended_ingestion": "Good source for recurrent Accra urban-flood photos and drainage/context images."
+    },
+    {
+      "id": "COLL-UNICEF-AKOSOMBO-2023",
+      "name": "UNICEF Ghana — The Akosombo Dam Spillage",
+      "source_page_url": "https://www.unicef.org/ghana/blog/akosombo-dam-spillage",
+      "source_type": "official-humanitarian-photo-story",
+      "locations_named": [
+        "Mepe",
+        "Battor",
+        "Sogakope",
+        "Mafi",
+        "Adidome",
+        "Ada"
+      ],
+      "contains_many_images": true,
+      "rights_status": "permission_required",
+      "recommended_ingestion": "Store source metadata and captions; do not mirror photos without permission."
+    },
+    {
+      "id": "COLL-UNICEF-MEPE-PHOTOESSAY",
+      "name": "UNICEF Ghana — Ghana Floods: Two Girls' Journey of Resilience",
+      "source_page_url": "https://www.unicef.org/ghana/stories/ghana-floods-two-girls-journey-resilience",
+      "source_type": "official-humanitarian-photo-essay",
+      "locations_named": [
+        "Mepe"
+      ],
+      "contains_many_images": true,
+      "rights_status": "permission_required",
+      "recommended_ingestion": "Excellent exact-event evidence; source-link unless permission is obtained."
+    },
+    {
+      "id": "COLL-MYJOY-MEPE-2023",
+      "name": "MyJoyOnline — Life on water in flooded Mepe",
+      "source_page_url": "https://www.myjoyonline.com/photos-life-on-water-in-now-flooded-mepe-after-akosombo-dam-spillage/",
+      "source_type": "news-photo-gallery",
+      "locations_named": [
+        "Mepe"
+      ],
+      "contains_many_images": true,
+      "reported_photo_count": 18,
+      "credit": "Samuel Moore / MyJoyOnline",
+      "rights_status": "not_openly_licensed_in_research",
+      "recommended_ingestion": "Evidence/source page only unless reuse permission is obtained."
+    },
+    {
+      "id": "COLL-MYJOY-MEPE-WOMEN-2023",
+      "name": "MyJoyOnline — Women affected by Akosombo spillage",
+      "source_page_url": "https://www.myjoyonline.com/photos-the-women-suffering-the-brunt-of-akosombo-dam-spillage/",
+      "source_type": "news-photo-gallery",
+      "locations_named": [
+        "Mepe / Lower Volta"
+      ],
+      "contains_many_images": true,
+      "credit": "Samuel Moore / MyJoyOnline",
+      "rights_status": "not_openly_licensed_in_research",
+      "recommended_ingestion": "Evidence/source page only unless permission is obtained."
+    },
+    {
+      "id": "COLL-MYJOY-MEPE-SHELTER-2023",
+      "name": "MyJoyOnline — Night at a shelter housing spillage victims",
+      "source_page_url": "https://www.myjoyonline.com/photos-a-night-at-a-shelter-housing-akosombo-dam-spillage-victims/",
+      "source_type": "news-photo-gallery",
+      "locations_named": [
+        "Mepe"
+      ],
+      "contains_many_images": true,
+      "credit": "Samuel Moore / MyJoyOnline",
+      "rights_status": "not_openly_licensed_in_research",
+      "recommended_ingestion": "Useful response/displacement evidence; link only until rights cleared."
+    },
+    {
+      "id": "COLL-MYJOY-SOGAKOPE-2023",
+      "name": "MyJoyOnline — Sogakope Bridge at risk of flooding",
+      "source_page_url": "https://www.myjoyonline.com/akosombo-dam-spillage-sogakope-bridge-at-risk-of-flooding/",
+      "source_type": "news-photo-report",
+      "locations_named": [
+        "Sogakope",
+        "Sokpoe"
+      ],
+      "contains_many_images": true,
+      "date": "2023-10-13",
+      "credit": "Kenneth Awotwe Darko / MyJoyOnline",
+      "rights_status": "not_openly_licensed_in_research",
+      "recommended_ingestion": "Excellent exact Sogakope evidence; do not scrape/rehost until rights are cleared."
+    },
+    {
+      "id": "COLL-MYJOY-LOWER-VOLTA-2023",
+      "name": "MyJoyOnline — Flooding displaces hundreds after Akosombo spillage",
+      "source_page_url": "https://www.myjoyonline.com/photos-flooding-displaces-hundreds-in-parts-of-volta-region-after-akosombo-dam-spillage/",
+      "source_type": "news-photo-gallery",
+      "locations_named": [
+        "Lower Volta / Tongu districts / Anlo context"
+      ],
+      "contains_many_images": true,
+      "date": "2023-10-11",
+      "rights_status": "not_openly_licensed_in_research",
+      "recommended_ingestion": "Regional event evidence; do not assign individual frames to a town without a caption."
+    },
+    {
+      "id": "COLL-MODERN-GHANA-PWALUGU-2018",
+      "name": "ModernGhana — Bagre Dam Floods Homes",
+      "source_page_url": "https://www.modernghana.com/news/880073/bagre-dam-floods-homes.html",
+      "source_type": "news-report",
+      "locations_named": [
+        "Pwalugu",
+        "Talensi",
+        "White Volta Basin"
+      ],
+      "date": "2018-09-05",
+      "rights_status": "permission_required",
+      "recommended_ingestion": "Source metadata only; direct candidate photo is also represented in assets."
+    },
+    {
+      "id": "COLL-MODERN-GHANA-ACCRA-2015",
+      "name": "ModernGhana / GNA — Torrential rains hit Accra",
+      "source_page_url": "https://www.modernghana.com/news/621279/torrential-rains-hit-accra.html",
+      "source_type": "news-report",
+      "locations_named": [
+        "Accra"
+      ],
+      "date": "2015-06-04",
+      "rights_status": "permission_required",
+      "recommended_ingestion": "Exact-event evidence for 3 June 2015 flood; use source-link until rights cleared."
+    }
+  ],
+  "commons_discovery_candidates": [
+    {
+      "filename": "Bus stuck in the mud.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Bus_stuck_in_the_mud.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bus_stuck_in_the_mud.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bus_stuck_in_the_mud.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Flood_damage_in_Ghana",
+      "width_px": 4928,
+      "height_px": 3280,
+      "file_size": "1.58 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flood distraction.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Flood_distraction.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flood_distraction.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flood_distraction.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Flood_damage_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "3.28 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooded 6.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Flooded_6.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooded_6.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooded_6.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Flood_damage_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.74 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooded home.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flooded_home.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooded_home.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooded_home.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Flood_damage_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "2.34 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding crisis in Ghana 2.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flooding_crisis_in_Ghana_2.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_crisis_in_Ghana_2.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_crisis_in_Ghana_2.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Flood_damage_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "2.18 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding crisis in Ghana 3.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Flooding_crisis_in_Ghana_3.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_crisis_in_Ghana_3.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_crisis_in_Ghana_3.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Flood_damage_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.94 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding crisis in Ghana 4.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flooding_crisis_in_Ghana_4.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_crisis_in_Ghana_4.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_crisis_in_Ghana_4.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Flood_damage_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "2.18 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding Accra.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flooding_Accra.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_Accra.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_Accra.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.28 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding at marketplace in Ghana.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flooding_at_marketplace_in_Ghana.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_at_marketplace_in_Ghana.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_at_marketplace_in_Ghana.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 4160,
+      "height_px": 3120,
+      "file_size": "4.19 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding crisis in Ghana 5.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flooding_crisis_in_Ghana_5.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_crisis_in_Ghana_5.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_crisis_in_Ghana_5.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.66 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding crisis in Ghana 6.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Flooding_crisis_in_Ghana_6.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_crisis_in_Ghana_6.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_crisis_in_Ghana_6.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.96 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding crisis in Ghana 7.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flooding_crisis_in_Ghana_7.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_crisis_in_Ghana_7.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_crisis_in_Ghana_7.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.50 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding crisis in Ghana 8.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Flooding_crisis_in_Ghana_8.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_crisis_in_Ghana_8.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_crisis_in_Ghana_8.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.76 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding crisis in Ghana.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Flooding_crisis_in_Ghana.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_crisis_in_Ghana.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_crisis_in_Ghana.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "2.47 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding disaster 10.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flooding_disaster_10.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_disaster_10.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_disaster_10.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.91 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding disaster 2.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flooding_disaster_2.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_disaster_2.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_disaster_2.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.60 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding disaster 3.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flooding_disaster_3.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_disaster_3.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_disaster_3.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.52 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding disaster 4.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Flooding_disaster_4.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_disaster_4.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_disaster_4.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "2.30 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding disaster 5.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Flooding_disaster_5.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_disaster_5.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_disaster_5.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.78 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding disaster 6.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Flooding_disaster_6.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_disaster_6.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_disaster_6.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.85 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding disaster 7.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Flooding_disaster_7.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_disaster_7.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_disaster_7.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.47 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Accra 6.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Flooding_in_Accra_6.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Accra_6.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Accra_6.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.88 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Accra 7.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flooding_in_Accra_7.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Accra_7.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Accra_7.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.43 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Accra 8.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flooding_in_Accra_8.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Accra_8.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Accra_8.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.63 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Accra.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Flooding_in_Accra.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Accra.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Accra.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.00 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Ghana 10.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Flooding_in_Ghana_10.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Ghana_10.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Ghana_10.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.70 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Ghana 13.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Flooding_in_Ghana_13.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Ghana_13.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Ghana_13.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.65 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Ghana 2.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flooding_in_Ghana_2.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Ghana_2.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Ghana_2.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.24 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Ghana 3.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Flooding_in_Ghana_3.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Ghana_3.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Ghana_3.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.23 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Ghana 4.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Flooding_in_Ghana_4.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Ghana_4.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Ghana_4.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.37 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Ghana 5.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Flooding_in_Ghana_5.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Ghana_5.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Ghana_5.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.41 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Ghana 6.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flooding_in_Ghana_6.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Ghana_6.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Ghana_6.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.41 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Ghana 7.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Flooding_in_Ghana_7.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Ghana_7.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Ghana_7.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.05 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Ghana 8.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Flooding_in_Ghana_8.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Ghana_8.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Ghana_8.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.27 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Ghana 9.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Flooding_in_Ghana_9.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Ghana_9.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Ghana_9.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.15 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Ghana.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Flooding_in_Ghana.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Ghana.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Ghana.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Environmental_Awareness_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.35 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flood in Accra.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flood_in_Accra.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flood_in_Accra.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flood_in_Accra.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Floods_in_Ghana",
+      "width_px": 1296,
+      "height_px": 972,
+      "file_size": "875 KB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooded parking garage.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Flooded_parking_garage.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooded_parking_garage.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooded_parking_garage.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Floods_in_Ghana",
+      "width_px": 4160,
+      "height_px": 3120,
+      "file_size": "4.23 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding hit in Accra 10.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Flooding_hit_in_Accra_10.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_hit_in_Accra_10.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_hit_in_Accra_10.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Floods_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.39 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding hit in Accra 11.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Flooding_hit_in_Accra_11.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_hit_in_Accra_11.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_hit_in_Accra_11.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Floods_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.48 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding hit in Accra 12.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Flooding_hit_in_Accra_12.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_hit_in_Accra_12.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_hit_in_Accra_12.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Floods_in_Ghana",
+      "width_px": 5184,
+      "height_px": 3456,
+      "file_size": "1.49 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Accra 01.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flooding_in_Accra_01.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Accra_01.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Accra_01.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Floods_in_Ghana",
+      "width_px": 4160,
+      "height_px": 3120,
+      "file_size": "2.75 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Accra 02.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Flooding_in_Accra_02.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Accra_02.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Accra_02.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Floods_in_Ghana",
+      "width_px": 4160,
+      "height_px": 3120,
+      "file_size": "2.71 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Accra 03.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Flooding_in_Accra_03.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Accra_03.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Accra_03.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Floods_in_Ghana",
+      "width_px": 4160,
+      "height_px": 3120,
+      "file_size": "2.83 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Accra 04.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flooding_in_Accra_04.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Accra_04.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Accra_04.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Floods_in_Ghana",
+      "width_px": 4160,
+      "height_px": 3120,
+      "file_size": "2.25 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Accra 05.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Flooding_in_Accra_05.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Accra_05.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Accra_05.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Floods_in_Ghana",
+      "width_px": 4160,
+      "height_px": 3120,
+      "file_size": "2.97 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Accra 06.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flooding_in_Accra_06.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Accra_06.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Accra_06.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Floods_in_Ghana",
+      "width_px": 4160,
+      "height_px": 3120,
+      "file_size": "2.82 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Accra 07.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Flooding_in_Accra_07.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Accra_07.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Accra_07.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Floods_in_Ghana",
+      "width_px": 4160,
+      "height_px": 3120,
+      "file_size": "2.13 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Accra 08.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Flooding_in_Accra_08.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Accra_08.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Accra_08.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Floods_in_Ghana",
+      "width_px": 4160,
+      "height_px": 3120,
+      "file_size": "1.92 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    },
+    {
+      "filename": "Flooding in Keta.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flooding_in_Keta.jpg",
+      "stable_file_redirect_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flooding_in_Keta.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Flooding_in_Keta.jpg",
+      "discovered_via_category": "https://commons.wikimedia.org/wiki/Category:Floods_in_Ghana",
+      "width_px": 4160,
+      "height_px": 3120,
+      "file_size": "7.73 MB",
+      "license_status": "individual_file_page_not_yet_reverified",
+      "reuse_allowed": null,
+      "display_ready": false,
+      "direct_url_status": "canonical_wikimedia_original_url_derived_from_exact_category_filename; HTTP not individually tested",
+      "action_required": "Fetch file page/API metadata; verify date, exact location, creator and license before map display."
+    }
+  ],
+  "other_evidence_candidates": [
+    {
+      "id": "GH-LV-2023-UNGH-001",
+      "location": "Lower Volta / Volta Region affected communities",
+      "event": "Akosombo/Kpong spillage, 2023",
+      "direct_image_url": "https://ghana.un.org/sites/default/files/styles/hero_header_2xl_1x/public/2023-11/WhatsApp%20Image%202023-10-23%20at%2011.42.32%20%281%29.jpeg?itok=jEfb4Y-A",
+      "source_page_url": "https://ghana.un.org/en/251888-un-ghana-reaffirms-its-support-ghana-wake-akosombo-dam-spillage-disaster",
+      "credit_or_agency": "United Nations in Ghana",
+      "rights_status": "permission_required_or_restricted",
+      "reuse_allowed": false,
+      "notes": "UN Photo/UN website rights should be cleared before mirroring or embedding; keep source link as evidence."
+    },
+    {
+      "id": "GH-MEPE-2023-AFRICAPRESS-001",
+      "location": "Mepe / Lower Volta",
+      "event": "Akosombo spillage health-crisis coverage, 2023",
+      "direct_image_url": "https://static.africa-press.net/ghana/sites/18/2023/10/sm_1697985365.56087.jpg",
+      "source_page_url": "https://www.africa-press.net/ghana/all-news/akosombo-dam-spillage-health-crisis-emerges-in-flood-ravaged-mepe",
+      "credit_or_agency": "Africa Press",
+      "rights_status": "unknown_not_openly_verified",
+      "reuse_allowed": null,
+      "notes": "Do not embed until rights are verified."
+    },
+    {
+      "id": "GH-LV-2023-ACIAFRICA-001",
+      "location": "Lower Volta flood-affected communities",
+      "event": "Akosombo/Kpong spillage, 2023",
+      "direct_image_url": "https://www.aciafrica.org/images/page-7-2023-10-26t171039_1698336795.jpg?format=jpeg&w=1200",
+      "source_page_url": "https://www.aciafrica.org/news/9457/religious-in-ghana-express-solidarity-with-victims-of-flooding-from-dam-spillage",
+      "credit_or_agency": "ACI Africa",
+      "rights_status": "unknown_not_openly_verified",
+      "reuse_allowed": null,
+      "notes": "Evidence candidate; do not embed until rights are verified."
+    },
+    {
+      "id": "GH-LV-2023-GHANAREPORT-001",
+      "location": "Lower Volta flood-affected communities",
+      "event": "Akosombo/Kpong spillage, 2023",
+      "direct_image_url": "https://www.theghanareport.com/wp-content/uploads/2023/10/Akosombp-Dam-spillage-2-scaled-1-4.jpg",
+      "source_page_url": "https://www.theghanareport.com/akosombo-dam-spillage-stop-the-needless-politicization-and-put-ghana-first/",
+      "credit_or_agency": "The Ghana Report",
+      "rights_status": "unknown_not_openly_verified",
+      "reuse_allowed": null,
+      "notes": "Evidence candidate; do not embed until rights are verified."
+    }
+  ],
+  "legal_reference_urls": [
+    {
+      "organization": "Wikimedia Commons / CC BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "note": "Reuse and commercial reuse allowed subject to attribution and share-alike obligations for adaptations."
+    },
+    {
+      "organization": "Wikimedia Commons / CC BY-SA 3.0",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "note": "Reuse and commercial reuse allowed subject to attribution and share-alike obligations for adaptations."
+    },
+    {
+      "organization": "UNICEF",
+      "url": "https://www.unicef.org/legal",
+      "note": "UNICEF site photographs are copyrighted; permission requirements apply."
+    },
+    {
+      "organization": "ModernGhana",
+      "url": "https://www.modernghana.com/terms/?gender=&menu_id=11&sub_menu_id=275",
+      "note": "Terms restrict reproduction/republishing beyond personal non-commercial use without permission."
+    },
+    {
+      "organization": "Prime News Ghana",
+      "url": "https://www.primenewsghana.com/terms-conditions.html",
+      "note": "Treat as permission-required for FloodOps production use unless the specific asset carries a separate license."
+    },
+    {
+      "organization": "United Nations",
+      "url": "https://media.un.org/photo/en/guidelines",
+      "note": "UN photo usage has specific permission/attribution conditions; do not assume UN imagery is public domain."
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "verified_at": "2026-08-16",
+  "event_count": 17,
+  "events": [
+    {
+      "id": "CM-HIST-URBAN-YDE-1980-2014",
+      "record_type": "aggregate_history",
+      "event": "Yaoundé recurrent urban floods",
+      "start": "1980",
+      "end": "2014",
+      "locations": [
+        "Yaoundé"
+      ],
+      "mechanism": [
+        "urban-pluvial",
+        "drainage",
+        "lowland/wetland exposure"
+      ],
+      "reported": {
+        "flood_count": ">130",
+        "deaths": ">80"
+      },
+      "source_url": "https://www.undrr.org/news/cameroons-cities-tackle-flood-risk",
+      "confidence": "official_secondary_aggregate",
+      "notes": "City Council aggregate cited by UNDRR; not 130 individually validated event records."
+    },
+    {
+      "id": "CM-HIST-URBAN-DLA-3DECADES",
+      "record_type": "aggregate_history",
+      "event": "Douala recurrent urban floods",
+      "start": "approx. 1985",
+      "end": "2015",
+      "locations": [
+        "Douala"
+      ],
+      "mechanism": [
+        "urban-pluvial",
+        "drainage",
+        "coastal/low-lying context"
+      ],
+      "reported": {
+        "flood_count": ">300",
+        "deaths_estimate": "~700"
+      },
+      "source_url": "https://www.undrr.org/news/cameroons-cities-tackle-flood-risk",
+      "confidence": "official_secondary_aggregate",
+      "notes": "UNDRR cites city history over three decades; use as recurrence context, not a complete geocoded event table."
+    },
+    {
+      "id": "CM-FL-2010-POUSS",
+      "record_type": "flood_event",
+      "event": "Pouss floods",
+      "start": "2010",
+      "end": "2011-04 report close",
+      "locations": [
+        "Pouss",
+        "Far North"
+      ],
+      "mechanism": [
+        "riverine/floodplain",
+        "seasonal rainfall"
+      ],
+      "reported": {
+        "ifrc_operation": "MDRCM010"
+      },
+      "source_url": "https://www.ifrc.org/appeals",
+      "confidence": "humanitarian_verified",
+      "notes": "Seed via IFRC DREF final report; retrieve full report for precise dates/impacts."
+    },
+    {
+      "id": "CM-FL-2012-NORTH-BENUE",
+      "record_type": "flood_event",
+      "event": "North Cameroon / Benue flood season",
+      "start": "2012-09",
+      "end": "2012-09",
+      "locations": [
+        "Garoua",
+        "Benue",
+        "Faro",
+        "Mayo Louti",
+        "North Region"
+      ],
+      "mechanism": [
+        "heavy-rain",
+        "riverine",
+        "Lagdo-release"
+      ],
+      "reported": {
+        "deaths": "nearly 20",
+        "homeless": "thousands"
+      },
+      "source_url": "https://disasterscharter.org/activations/extreme-floods-in-north-province-of-cameroon",
+      "confidence": "charter_event",
+      "notes": "Do not collapse into Logone/Maga event: this is the Benue/Lagdo basin component."
+    },
+    {
+      "id": "CM-FL-2012-FARNORTH-LOGONE-MAGA",
+      "record_type": "flood_event",
+      "event": "Far North Logone–Maga floods",
+      "start": "2012",
+      "end": "2012",
+      "locations": [
+        "Maga",
+        "Mayo-Danay",
+        "Logone-et-Chari",
+        "Far North"
+      ],
+      "mechanism": [
+        "extreme-rainfall",
+        "riverine/floodplain",
+        "dyke/dam infrastructure damage"
+      ],
+      "reported": {
+        "affected_people": "~60,000",
+        "logone_dyke_destroyed_km": ">25",
+        "maga_dam": "significantly weakened"
+      },
+      "source_url": "https://www.worldbank.org/en/results/2020/11/10/flood-management-in-the-far-north-of-cameroon",
+      "confidence": "official_project_reconstruction",
+      "notes": "Key training event because post-2012 rehabilitation materially changed infrastructure state."
+    },
+    {
+      "id": "CM-FL-2015-URBAN",
+      "record_type": "flood_season",
+      "event": "June–July urban floods",
+      "start": "2015-06",
+      "end": "2015-07",
+      "locations": [
+        "Yaoundé",
+        "Douala"
+      ],
+      "mechanism": [
+        "urban-pluvial",
+        "drainage"
+      ],
+      "reported": {
+        "affected_people": "~40,000 across recent floods cited by UNDRR"
+      },
+      "source_url": "https://www.undrr.org/news/cameroons-cities-tackle-flood-risk",
+      "confidence": "official_secondary",
+      "notes": "Collect individual newspaper/council dates before using as day-level model labels."
+    },
+    {
+      "id": "CM-FL-2019-FARNORTH",
+      "record_type": "flood_event",
+      "event": "Logone overflow / Far North floods",
+      "start": "2019-10-01",
+      "end": "2019-10",
+      "locations": [
+        "Zina",
+        "Mayo-Danay",
+        "Logone-et-Chari",
+        "Lake Maga"
+      ],
+      "mechanism": [
+        "heavy-rain",
+        "riverine",
+        "Logone-overbank"
+      ],
+      "reported": {
+        "affected_people": "~100,000",
+        "roads": "many impassable"
+      },
+      "source_url": "https://disasterscharter.org/activations/flood-flash-in-cameroon-activation-627-",
+      "confidence": "charter_event",
+      "notes": "Excellent satellite-labelled historical event."
+    },
+    {
+      "id": "CM-FL-2020-WEST",
+      "record_type": "flood_event",
+      "event": "Western Cameroon floods",
+      "start": "2020-08",
+      "end": "2020-08",
+      "locations": [
+        "Douala",
+        "Bafoussam",
+        "West/Littoral"
+      ],
+      "mechanism": [
+        "torrential-rain",
+        "urban-pluvial",
+        "river/bridge impacts"
+      ],
+      "reported": {
+        "displaced_families": "up to ~900"
+      },
+      "source_url": "https://disasterscharter.org/activations/flood-flash-in-cameroon-activation-672-",
+      "confidence": "charter_event",
+      "notes": "Satellite-derived assessments available for Douala and western AOIs."
+    },
+    {
+      "id": "CM-FL-2020-FARNORTH",
+      "record_type": "flood_event",
+      "event": "Far North September floods",
+      "start": "2020-09-15",
+      "end": "2020-09",
+      "locations": [
+        "Zina",
+        "Logone Birni",
+        "Waza",
+        "Kousséri",
+        "Goulfey",
+        "Blangoua",
+        "Makary",
+        "Fotokol",
+        "Hile Alifa"
+      ],
+      "mechanism": [
+        "riverine/floodplain",
+        "heavy-rain"
+      ],
+      "reported": {
+        "cems_activation": "EMSN082",
+        "aoi_count": 9
+      },
+      "source_url": "https://mapping.emergency.copernicus.eu/activations/EMSN082/",
+      "confidence": "cems_observed",
+      "notes": "CEMS provides flood delineation and depth-related geospatial products."
+    },
+    {
+      "id": "CM-FL-2021-DOUALA",
+      "record_type": "flood_event",
+      "event": "Douala waist-deep urban flood",
+      "start": "2021-08-11",
+      "end": "2021-08-12",
+      "locations": [
+        "Douala"
+      ],
+      "mechanism": [
+        "torrential-rain",
+        "urban-pluvial",
+        "drainage-overload",
+        "culvert-overflow"
+      ],
+      "reported": {
+        "rain_duration": ">24h",
+        "homes": "hundreds of ground floors flooded",
+        "roads": "main roads cut"
+      },
+      "source_url": "https://www.reutersconnect.com/item/residents-make-their-way-through-a-flooded-street-after-the-heavy-rains-in-douala/dGFnOnJldXRlcnMuY29tLDIwMjE6bmV3c21sX1JDMkwzUDk0WVRNMQ",
+      "confidence": "news_agency_event",
+      "notes": "Strong urban drainage case; Reuters imagery is restricted/licensable."
+    },
+    {
+      "id": "CM-DAM-2022-LAGDO",
+      "record_type": "dam_operation",
+      "event": "Lagdo controlled releases",
+      "start": "2022-09",
+      "end": "2022-10",
+      "locations": [
+        "Lagdo",
+        "Garoua",
+        "Benue downstream"
+      ],
+      "mechanism": [
+        "reservoir-management",
+        "controlled-release"
+      ],
+      "reported": {
+        "reservoir_filling": "91% at notice"
+      },
+      "source_url": "https://eneocameroon.cm/index.php/fr/component/content/article?Itemid=746&id=3299",
+      "confidence": "official_dam_notice",
+      "notes": "Operational precursor/driver record; do not call every release a flood."
+    },
+    {
+      "id": "CM-FL-2022-YAGOUA",
+      "record_type": "flood_event",
+      "event": "Yagoua flood",
+      "start": "2022-10-07",
+      "end": "2022-10",
+      "locations": [
+        "Yagoua",
+        "Mayo-Danay"
+      ],
+      "mechanism": [
+        "riverine/floodplain",
+        "seasonal-rain"
+      ],
+      "reported": {
+        "photo_evidence": "14-file Wikimedia category"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/Category:Floods_in_Yagoua",
+      "confidence": "open_photo_evidence",
+      "notes": "Use humanitarian/official reports to complete impacts; photographs provide exact geotagged ground evidence."
+    },
+    {
+      "id": "CM-FL-2023-BUEA",
+      "record_type": "flood_event",
+      "event": "Buea flash floods and mudslides",
+      "start": "2023-03-18",
+      "end": "2023-03-18",
+      "locations": [
+        "Buea",
+        "Bova",
+        "Bokwai"
+      ],
+      "mechanism": [
+        "torrential-rain",
+        "flash-flood",
+        "mudslide",
+        "steep-terrain",
+        "urbanization"
+      ],
+      "reported": {
+        "deaths": 2,
+        "homeless": ">1,100",
+        "women_of_reproductive_age": 442
+      },
+      "source_url": "https://cameroon.unfpa.org/en/news/more-400-women-and-girls-need-protection-and-sexual-and-reproductive-health-services-following",
+      "confidence": "un_rapid_assessment",
+      "notes": "Waterpoints, pipes and latrines damaged; excellent vulnerability/critical-infrastructure case."
+    },
+    {
+      "id": "CM-FL-2023-MBANKOLO",
+      "record_type": "compound_disaster",
+      "event": "Mbankolo dike/lake failure and flood/mudflow",
+      "start": "2023-10-08",
+      "end": "2023-10-09",
+      "locations": [
+        "Mbankolo",
+        "Yaoundé"
+      ],
+      "mechanism": [
+        "heavy-rain",
+        "dike-failure",
+        "stored-water-release",
+        "drainage-path exposure",
+        "mudflow/landslide"
+      ],
+      "reported": {
+        "deaths_provisional": ">27"
+      },
+      "source_url": "https://www.minhdu.gov.cm/en/mbankolo-le-drame/",
+      "confidence": "official_event",
+      "notes": "Core FloodOps example proving infrastructure failure can transform rainfall into catastrophic flood impact."
+    },
+    {
+      "id": "CM-FL-2024-FARNORTH",
+      "record_type": "flood_event",
+      "event": "Major Cameroon/Far North floods",
+      "start": "2024-08",
+      "end": "2024-11+",
+      "locations": [
+        "Mayo-Danay",
+        "Logone-et-Chari",
+        "Yagoua",
+        "Kousseri",
+        "Blangoua",
+        "Far North"
+      ],
+      "mechanism": [
+        "torrential-rain",
+        "riverine/floodplain",
+        "dyke/infrastructure stress"
+      ],
+      "reported": {
+        "affected_people": ">360,000 early IFRC figure",
+        "cems_activation": "EMSR779"
+      },
+      "source_url": "https://www.ifrc.org/emergency/cameroon-floods",
+      "secondary_source": "https://mapping.emergency.copernicus.eu/activations/EMSR779/",
+      "confidence": "multi_source_verified",
+      "notes": "Impact estimates changed over time; store every report version rather than overwrite."
+    },
+    {
+      "id": "CM-DAM-2024-LAGDO",
+      "record_type": "dam_operation",
+      "event": "Lagdo 2024 flood-management releases",
+      "start": "2024-09-18",
+      "end": "2024",
+      "locations": [
+        "Lagdo",
+        "Benue downstream"
+      ],
+      "mechanism": [
+        "controlled-release",
+        "reservoir-management"
+      ],
+      "reported": {
+        "first_release": "2024-09-18"
+      },
+      "source_url": "https://eneocameroon.cm/index.php/fr/actualite-communiques/communiques-communiques-de-presse/3505-gestion-des-crues-a-lagdo-et-maitrise-des-risques",
+      "confidence": "official_dam_notice",
+      "notes": "Eneo states releases were measured/controlled; use as hydrological driver, not automatic causal attribution to all downstream flooding."
+    },
+    {
+      "id": "CM-EAP-2026",
+      "record_type": "anticipatory_action",
+      "event": "Cameroon Floods EAP MDRCM044",
+      "start": "2026-04-10",
+      "end": null,
+      "locations": [
+        "Cameroon / target areas per EAP"
+      ],
+      "mechanism": [
+        "forecast-based-action"
+      ],
+      "reported": {
+        "ifrc_operation": "MDRCM044"
+      },
+      "source_url": "https://www.ifrc.org/appeals",
+      "confidence": "official_anticipatory_plan",
+      "notes": "Useful to understand trigger thresholds and preparedness; explicitly not proof that a flood occurred."
+    }
+  ]
+}
