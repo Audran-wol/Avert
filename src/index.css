@@ -3,17 +3,42 @@
 
 /* MineOps design tokens (UI/UX Blueprint §6) exposed as Tailwind theme colors */
 @theme {
-  --color-space: #05070a;
-  --color-bg: #070a0e;
-  --color-panel: #0b1016;
-  --color-elevated: #101720;
-  --color-hover: #151d27;
+  --color-primary: #175acb;
+  --color-secondary: #535d67;
+  --color-tertiary: #a73f00;
+  --color-neutral: #15191d;
 
-  --color-ink: #f3f6f8;
-  --color-muted: #9aa7b3;
-  --color-faint: #667482;
+  /* Avert dark-geographic-workspace tokens (docs/avert-refactor/01_DESIGN_SYSTEM.md).
+     Desaturated a step from the spec's starting values: the original blue-heavy surfaces read
+     as over-saturated against real map imagery, and hairline borders read cleaner than 1px
+     high-contrast ones at panel scale. */
+  --color-canvas: #070c11;
+  --color-surface: #0c1219;
+  --color-raised: #141c25;
+  --color-field: #10171f;
+  --color-border: #1d2833;
+  --color-border-strong: #2b3a47;
+  --color-text: #f2f5f7;
+  --color-text-secondary: #a9b8c4;
+  --color-text-muted: #75879a;
+  --color-action: #3b87f0;
+  --color-flood: #65b6e9;
+  --color-priority: #eab364;
+  --color-danger: #e8837c;
+  --color-success: #3bb99f;
 
-  --color-cyan: #42c8e8;
+  /* legacy chrome aliases — existing components keep working, now painted with the tokens above */
+  --color-space: var(--color-canvas);
+  --color-bg: var(--color-canvas);
+  --color-panel: var(--color-surface);
+  --color-elevated: var(--color-raised);
+  --color-hover: #18222c;
+
+  --color-ink: var(--color-text);
+  --color-muted: var(--color-text-secondary);
+  --color-faint: var(--color-text-muted);
+
+  --color-cyan: var(--color-action);
   --color-low: #31c48d;
   --color-moderate: #e3b341;
   --color-high: #f28a35;
@@ -66,6 +91,41 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
 }
+
+body:has(.login-page) { overflow-y: auto; }
+button, input, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--color-action); outline-offset: 2px; border-radius: 8px; }
+
+/* --- Premium surface system -------------------------------------------------
+   One consistent panel treatment: hairline border, soft depth, generous radius.
+   `.glass-panel` is the variant that floats over live map imagery. */
+.panel-surface {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.28), 0 8px 24px -12px rgba(0,0,0,.5);
+}
+.glass-panel {
+  background: color-mix(in srgb, var(--color-surface) 82%, transparent);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid color-mix(in srgb, var(--color-border-strong) 70%, transparent);
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.35), 0 16px 40px -20px rgba(0,0,0,.65);
+}
+/* Map labels and figures sitting on imagery need their own contrast floor. */
+.on-map-text { text-shadow: 0 1px 3px rgba(0,0,0,.85), 0 0 14px rgba(0,0,0,.5); }
+.hairline { border-color: var(--color-border); }
+.avert-input { width: 100%; height: 48px; border-radius: 12px; border: 1px solid rgba(21,25,29,.14); background: #fff; padding: 0 14px; color: #15191d; font-size: 14px; outline: none; transition: border-color .18s, box-shadow .18s; }
+.avert-input:focus { border-color: #175acb; box-shadow: 0 0 0 3px rgba(23,90,203,.10); }
+.login-scene { background: radial-gradient(circle at 74% 44%, rgba(23,90,203,.19), transparent 31%), linear-gradient(145deg,#0d1824 0%,#07101a 65%,#0d1218 100%); }
+.signal-dot { width: 10px; height: 10px; border-radius: 999px; background: #175acb; box-shadow: 0 0 0 0 rgba(23,90,203,.55); animation: signal-pulse 2.8s infinite; }
+@keyframes signal-pulse { 0% { box-shadow: 0 0 0 0 rgba(23,90,203,.55); } 70% { box-shadow: 0 0 0 18px rgba(23,90,203,0); } 100% { box-shadow: 0 0 0 0 rgba(23,90,203,0); } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+/* Preferences > Motion: explicit in-app overrides, independent of the OS media query. */
+.force-reduced-motion *, .force-reduced-motion *::before, .force-reduced-motion *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+@media (prefers-reduced-motion: reduce) { .force-full-motion *, .force-full-motion *::before, .force-full-motion *::after { animation-duration: revert !important; animation-iteration-count: revert !important; transition-duration: revert !important; } }
 
 .mono {
   font-family: var(--font-mono);

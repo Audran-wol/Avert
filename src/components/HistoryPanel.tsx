@@ -18,8 +18,8 @@ export default function HistoryPanel() {
       {historyOpen && (
         <>
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setHistoryOpen(false)} className="absolute inset-0 z-40 bg-black/40" />
-          <motion.aside initial={{ x: -400 }} animate={{ x: 0 }} exit={{ x: -400 }} transition={{ type: "tween", duration: 0.28 }} className="absolute top-0 left-0 bottom-0 w-[400px] z-40 bg-panel border-r border-white/10 overflow-y-auto">
-            <div className="flex items-center justify-between px-4 h-[58px] border-b border-white/10 sticky top-0 bg-panel z-10">
+          <motion.aside initial={{ x: -400 }} animate={{ x: 0 }} exit={{ x: -400 }} transition={{ type: "tween", duration: 0.28 }} className="absolute top-0 left-0 bottom-0 w-[400px] z-40 bg-panel border-r border-[var(--color-border)] overflow-y-auto">
+            <div className="flex items-center justify-between px-4 h-[58px] border-b border-[var(--color-border)] sticky top-0 bg-panel z-10">
               <div className="flex items-center gap-2"><History size={16} className="text-cyan" /><span className="font-semibold text-sm">Flood history</span></div>
               <button onClick={() => setHistoryOpen(false)} className="text-faint hover:text-ink"><X size={18} /></button>
             </div>
@@ -29,7 +29,7 @@ export default function HistoryPanel() {
                 <span className="block mt-1 text-faint">Lower Volta has flooded <span className="text-ink mono">{AOI_RECURRENCE.count}×</span> in this record ({AOI_RECURRENCE.years.join(", ")}).</span>
               </p>
               <div className="relative pl-4">
-                <span className="absolute left-[5px] top-1 bottom-1 w-px bg-white/10" />
+                <span className="absolute left-[5px] top-1 bottom-1 w-px bg-[var(--color-border)]" />
                 {events.map((e) => {
                   const loadable = !!e.spatialEventId;
                   const active = e.spatialEventId === eventId;
@@ -38,7 +38,7 @@ export default function HistoryPanel() {
                       <span className="absolute -left-[13px] top-1.5 w-2.5 h-2.5 rounded-full border-2 border-panel" style={{ background: MECH_COLOR[e.mechanism] }} />
                       <div
                         onClick={() => loadable && setEvent(e.spatialEventId!)}
-                        className={`bg-elevated/60 rounded-lg p-2.5 border transition-colors ${active ? "border-cyan/50" : "border-white/5"} ${loadable ? "cursor-pointer hover:bg-hover" : ""}`}
+                        className={`bg-elevated/60 rounded-lg p-2.5 border transition-colors ${active ? "border-cyan/50" : "border-[var(--color-border)]"} ${loadable ? "cursor-pointer hover:bg-hover" : ""}`}
                       >
                         <div className="flex items-center justify-between gap-2">
                           <span className="text-xs font-medium">{e.name}</span>

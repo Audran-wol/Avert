@@ -1,0 +1,16 @@
+# Attribution for bundled open-license images
+
+No ownership is claimed by Avert. Keep individual source links and creator credits. Publisher previews may be resized. Rights verification does not establish independent geolocation/date verification.
+
+- `images_open/AV-M-041.jpg` — **Dera11329**; [original file page](https://commons.wikimedia.org/wiki/File:Consequences_of_rainfall_in_Buea_south-west_Region_of_Cameroon.jpg); [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); capture date from metadata: 2023-03-23.
+- `images_open/AV-M-042.jpg` — **Felixdiga**; [original file page](https://commons.wikimedia.org/wiki/File:Inondation_%C3%A0_Gu%C3%A9r%C3%A9.jpg); [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); capture date from metadata: 2023-03-10.
+- `images_open/AV-M-043.jpg` — **Bile rene**; [original file page](https://commons.wikimedia.org/wiki/File:Innondation_%C3%A0_Yagoua_2022_11.jpg); [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); capture date from metadata: 2022-10-07.
+- `images_open/AV-M-044.jpg` — **Bile rene**; [original file page](https://commons.wikimedia.org/wiki/File:Innondation_%C3%A0_Yagoua_2022_13.jpg); [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); capture date from metadata: 2022-10-07.
+- `images_open/AV-M-045.jpg` — **Bile rene**; [original file page](https://commons.wikimedia.org/wiki/File:Innondation_%C3%A0_Yagoua_2022_14.jpg); [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); capture date from metadata: 2022-10-07.
+- `images_open/AV-M-046.jpg` — **Bile rene**; [original file page](https://commons.wikimedia.org/wiki/File:Innondation_%C3%A0_Yagoua_2022_2.jpg); [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); capture date from metadata: 2022-10-07.
+- `images_open/AV-M-047.jpg` — **Bile rene**; [original file page](https://commons.wikimedia.org/wiki/File:Innondation_%C3%A0_Yagoua_2022_4.jpg); [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); capture date from metadata: 2022-10-07.
+- `images_open/AV-M-048.jpg` — **Bile rene**; [original file page](https://commons.wikimedia.org/wiki/File:Innondation_%C3%A0_Yagoua_2022_5.jpg); [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); capture date from metadata: 2022-10-07.
+- `images_open/AV-M-049.jpg` — **Bile rene**; [original file page](https://commons.wikimedia.org/wiki/File:Innondation_%C3%A0_Yagoua_2022_6.jpg); [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); capture date from metadata: 2022-10-07.
+- `images_open/AV-M-050.jpg` — **Bile rene**; [original file page](https://commons.wikimedia.org/wiki/File:Innondation_%C3%A0_Yagoua_2022_7.jpg); [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); capture date from metadata: 2022-10-07.
+- `images_open/AV-M-051.jpg` — **Bile rene**; [original file page](https://commons.wikimedia.org/wiki/File:Innondation_%C3%A0_Yagoua_2022_9.jpg); [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); capture date from metadata: 2022-10-07.
+- `images_open/AV-M-052.jpg` — **Bile rene**; [original file page](https://commons.wikimedia.org/wiki/File:Innondation_%C3%A0_Yagoua_2022.jpg); [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); capture date from metadata: 2022-10-07.

@@ -9,3 +9,16 @@ dist
 # personal doc, do not publish
 src/262340*.pdf
 *.pdf
+
+# Avert refactor handoff — tracked despite the blanket *.md rule above
+!docs/avert-refactor/**
+!docs/avert-refactor/**/*.md
+!.claude/skills/**
+!.claude/skills/**/*.md
+
+# fresh-evidence research pack — tracked despite the blanket *.md rule above
+!record/**
+!record/**/*.md
+
+# local Claude Code session state, not project config
+.claude/settings.local.json

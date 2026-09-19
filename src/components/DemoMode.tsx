@@ -14,7 +14,7 @@ const S = () => useStore.getState();
 
 const CHAPTERS: Chapter[] = [
   {
-    n: "01", title: "FloodOps AI", caption: "Disaster intelligence from orbit — Lower Volta, Ghana",
+    n: "01", title: "Avert", caption: "Disaster intelligence for earlier action — Lower Volta, Ghana",
     ms: 3800,
     run: () => { const s = S(); s.setBasemap("streets"); s.setMode("observed"); s.setEvent("2023"); s.selectCommunity(null); s.setStep(0); },
   },
@@ -75,7 +75,7 @@ export default function DemoMode() {
     <AnimatePresence>
       {demoRunning && c && (
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 12 }} className="absolute bottom-24 left-1/2 -translate-x-1/2 z-30 w-[560px] max-w-[calc(100%-2rem)]">
-          <div className="bg-panel/95 backdrop-blur border border-white/10 rounded-2xl px-5 py-4 shadow-2xl">
+          <div className="glass-panel px-5 py-4">
             <div className="flex items-start gap-3">
               <span className="mono text-2xl font-semibold text-cyan leading-none">{c.n}</span>
               <div className="flex-1 min-w-0">
@@ -85,7 +85,7 @@ export default function DemoMode() {
               <button onClick={() => setDemoRunning(false)} className="text-faint hover:text-ink shrink-0"><X size={16} /></button>
             </div>
             <div className="flex gap-1 mt-3">
-              {CHAPTERS.map((_, i) => <span key={i} className={`h-1 flex-1 rounded-full ${i <= ch ? "bg-cyan" : "bg-white/15"}`} />)}
+              {CHAPTERS.map((_, i) => <span key={i} className={`h-1 flex-1 rounded-full ${i <= ch ? "bg-cyan" : "bg-raised"}`} />)}
             </div>
           </div>
         </motion.div>

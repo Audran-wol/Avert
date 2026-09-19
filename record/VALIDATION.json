@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-19",
+  "photo_records": 51,
+  "bundled_open_license_files": 12,
+  "press_photo_links": 39,
+  "structured_records": 16,
+  "video_leads": 8,
+  "checks_passed": [
+    "JSON parsing",
+    "Unique record IDs",
+    "Source and event reference integrity",
+    "12 local images decoded and visually reviewed",
+    "License and attribution supplied for bundled images",
+    "No private research cache included"
+  ],
+  "limits": [
+    "Only original uploaded ZIP was available for deduplication, not current local working tree.",
+    "Older baseline photo pixels were not exhaustively compared across mirrors and crops.",
+    "Video contents were not fully watched.",
+    "Recent press-photo reuse rights remain unverified."
+  ]
+}

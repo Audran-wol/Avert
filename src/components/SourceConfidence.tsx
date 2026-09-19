@@ -15,20 +15,20 @@ export default function SourceConfidence() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setSourcesOpen(false)} className="absolute inset-0 z-40 bg-black/40" />
           <motion.aside
             initial={{ x: 380 }} animate={{ x: 0 }} exit={{ x: 380 }} transition={{ type: "tween", duration: 0.28 }}
-            className="absolute top-0 right-0 bottom-0 w-[380px] z-40 bg-panel border-l border-white/10 overflow-y-auto"
+            className="absolute top-0 right-0 bottom-0 w-[380px] z-40 bg-panel border-l border-[var(--color-border)] overflow-y-auto"
           >
-            <div className="flex items-center justify-between px-4 h-[58px] border-b border-white/10 sticky top-0 bg-panel z-10">
+            <div className="flex items-center justify-between px-4 h-[58px] border-b border-[var(--color-border)] sticky top-0 bg-panel z-10">
               <div className="flex items-center gap-2"><Database size={16} className="text-cyan" /><span className="font-semibold text-sm">Source Confidence</span></div>
               <button onClick={() => setSourcesOpen(false)} className="text-faint hover:text-ink"><X size={18} /></button>
             </div>
 
             <div className="p-4">
               <p className="text-[11px] text-muted leading-relaxed mb-3">
-                Every value in FloodOps is traceable. This registry shows exactly what is fetched live, what is a cited real value, what FloodOps models, and what is planned.
+                Every value in Avert is traceable. This registry shows exactly what is fetched live, what is a cited real value, what Avert models, and what is planned.
               </p>
               <div className="grid grid-cols-4 gap-1.5 mb-4">
                 {ORDER.map((k) => (
-                  <div key={k} className="bg-elevated rounded-lg p-2 text-center border border-white/5">
+                  <div key={k} className="bg-elevated rounded-lg p-2 text-center border border-[var(--color-border)]">
                     <div className="mono text-lg font-semibold" style={{ color: INTEGRATION_COLOR[k] }}>{counts[k]}</div>
                     <div className="text-[8px] uppercase tracking-wide text-faint mt-0.5">{k}</div>
                   </div>
@@ -46,7 +46,7 @@ export default function SourceConfidence() {
                     </div>
                     <div className="space-y-1.5">
                       {rows.map((s) => (
-                        <div key={s.id} className="bg-elevated/60 rounded-lg p-2.5 border border-white/5">
+                        <div key={s.id} className="bg-elevated/60 rounded-lg p-2.5 border border-[var(--color-border)]">
                           <div className="flex items-center justify-between gap-2">
                             <span className="text-xs font-medium">{s.name}</span>
                             <span className="mono text-[9px] text-faint shrink-0">{s.id}</span>

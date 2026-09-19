@@ -36,34 +36,66 @@ export default function TimelinePlayer() {
   if (mode === "forecast") return null; // no event timeline in forecast
 
   return (
-    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 w-[620px] max-w-[calc(100%-2rem)]">
-      <AnimatePresence>
+    <div className="absolute bottom-4 left-1/2 z-10 w-[600px] max-w-[calc(100%-2rem)] -translate-x-1/2">
+      <AnimatePresence mode="wait">
         {caption && (
-          <motion.div key={caption} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 6 }} className="mb-2 mx-auto w-fit px-3 py-1.5 rounded-lg bg-panel/95 backdrop-blur border border-white/10 text-xs">
-            <span className="mono text-faint mr-2">{step.day}</span>
-            <span className="text-cyan">{caption}</span>
+          <motion.div
+            key={caption}
+            initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -4 }}
+            transition={{ duration: 0.2 }}
+            className="glass-panel mx-auto mb-2 w-fit max-w-full px-3 py-1.5"
+          >
+            <span className="mono mr-2 text-[10px] text-faint">{step.day}</span>
+            <span className="text-[12px] text-ink">{caption}</span>
           </motion.div>
         )}
       </AnimatePresence>
 
-      <div className="flex items-center gap-3 bg-panel/95 backdrop-blur border border-white/10 rounded-xl px-3 py-2.5">
-        <button onClick={toggle} className="w-9 h-9 shrink-0 rounded-lg bg-cyan/15 text-cyan hover:bg-cyan/25 border border-cyan/20 flex items-center justify-center">
-          {playing ? <Pause size={16} /> : <Play size={16} />}
+      <div className="glass-panel flex items-center gap-3 px-3 py-2.5">
+        <button
+          onClick={toggle}
+          aria-label={playing ? "Pause playback" : "Play flood timeline"}
+          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-action text-white transition-opacity hover:opacity-90"
+        >
+          {playing ? <Pause size={15} /> : <Play size={15} className="ml-0.5" />}
         </button>
-        <div className="flex-1 flex items-center gap-1">
+
+        <div className="flex flex-1 items-end gap-1">
           {steps.map((s, i) => {
             const on = i <= stepIndex;
+            const current = i === stepIndex;
             return (
-              <button key={s.day} onClick={() => { setPlaying(false); setStep(i); }} className="flex-1 flex flex-col items-center gap-1">
-                <span className="w-full h-1 rounded-full" style={{ background: on ? "#2b8fd6" : "rgba(255,255,255,0.14)" }} />
-                <span className={`text-[9px] mono ${i === stepIndex ? "text-ink" : "text-faint"}`}>{s.day.slice(5)}</span>
+              <button
+                key={s.day}
+                onClick={() => { setPlaying(false); setStep(i); }}
+                title={s.day}
+                className="group flex flex-1 flex-col items-center gap-1.5"
+              >
+                <span
+                  className="w-full rounded-full transition-all"
+                  style={{
+                    height: current ? 6 : 3,
+                    background: on ? "var(--color-action)" : "rgba(255,255,255,0.13)",
+                    opacity: on && !current ? 0.55 : 1,
+                  }}
+                />
+                <span className={`mono text-[9px] transition-colors ${current ? "text-ink" : "text-faint/70 group-hover:text-muted"}`}>
+                  {current ? s.day.slice(5) : ""}
+                </span>
               </button>
             );
           })}
         </div>
-        <div className="shrink-0 flex items-center gap-3 pl-2 border-l border-white/10 mono text-xs">
-          <span><span className="text-faint">FLOODED </span><span className="text-ink">{inundated}</span></span>
-          <span><span className="text-faint">EXPOSED </span><span className="text-[#8fd4ff]">≈{(exposed / 1000).toFixed(1)}k</span></span>
+
+        <div className="mono flex shrink-0 items-center gap-3 border-l border-[var(--color-border)] pl-3 text-[11px]">
+          <span className="flex flex-col leading-tight">
+            <span className="text-[8.5px] uppercase tracking-[0.08em] text-faint">Flooded</span>
+            <span className="text-ink">{inundated}</span>
+          </span>
+          <span className="flex flex-col leading-tight">
+            <span className="text-[8.5px] uppercase tracking-[0.08em] text-faint">Exposed</span>
+            <span className="text-flood">≈{(exposed / 1000).toFixed(1)}k</span>
+          </span>
         </div>
       </div>
     </div>

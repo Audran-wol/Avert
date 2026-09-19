@@ -1,0 +1,591 @@
+[
+  {
+    "id": "AV-CM-DLA-202609",
+    "country": "CMR",
+    "title": "Douala September flooding",
+    "record_type": "incident_episode",
+    "event_dates": {
+      "start": "2026-09-10",
+      "end": null,
+      "precision": "night_10_to_11_confirmed_by_press; follow-up_dates_unresolved"
+    },
+    "location_names": [
+      "Douala V",
+      "Bonamoussadi",
+      "Sable",
+      "Entrée Mbanya",
+      "Bepanda-Bonabo",
+      "Makèpè-Missokè",
+      "Denver"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "CM01",
+      "CM02",
+      "CM03",
+      "CM04",
+      "CM05"
+    ],
+    "summary": "Local and broadcast reporting describes flooded streets and homes, disrupted school attendance and transport. Follow-up reporting on September 18 describes further impacts.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "coverage": "existing_douala_region",
+    "review_notes": [
+      "News from Sep 11–14 describes rain overnight Sep 10–11. Sep 18 report describes rain Sep 12–13. Could be additional rainfall or inconsistent dating; keep one episode with separately dated observations until checked.",
+      "Only label specific neighbourhood media when its caption supports that locality.",
+      "Municipal gauges are reported by press, not retrieved sensor observations."
+    ]
+  },
+  {
+    "id": "AV-CM-DLA-UPDATE-20260918",
+    "country": "CMR",
+    "title": "Douala humanitarian impact update",
+    "record_type": "situation_update",
+    "event_dates": {
+      "start": null,
+      "reported_night": "2026-09-12/2026-09-13",
+      "precision": "source_reported"
+    },
+    "location_names": [
+      "Douala I",
+      "Douala V"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "CM05"
+    ],
+    "summary": "September 18 coverage, citing humanitarian reporting, describes approximately 500 affected households and approximately 200 displaced people.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "parent_id": "AV-CM-DLA-202609",
+    "reported_metrics": [
+      {
+        "metric": "affected_households",
+        "value_approx": 500,
+        "as_of": "2026-09-18",
+        "scope": "reported_Douala_affected_area",
+        "source_id": "CM05"
+      },
+      {
+        "metric": "displaced_people",
+        "value_approx": 200,
+        "as_of": "2026-09-18",
+        "scope": "reported_Douala_affected_area",
+        "source_id": "CM05"
+      }
+    ],
+    "review_notes": [
+      "Original humanitarian report not retrieved; do not label these as independently verified counts or add them to initial-report estimates."
+    ]
+  },
+  {
+    "id": "AV-CM-LIM-20260805",
+    "country": "CMR",
+    "title": "Limbe flooding and Mbende landslide",
+    "record_type": "compound_incident",
+    "event_dates": {
+      "start": "2026-08-05",
+      "end": null,
+      "precision": "day_reported"
+    },
+    "location_names": [
+      "Limbe",
+      "Mbende"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "CM06",
+      "CM07"
+    ],
+    "summary": "Reports describe flooding in Limbe and a landslide at Mbende after heavy rain. Keep landslide impacts distinct from flood impacts.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "hazards": [
+      "flood",
+      "landslide"
+    ],
+    "coverage": "new_locality_outside_existing_four_regions",
+    "review_notes": [
+      "Greenpeace attributes three deaths to the landslide based on residents; not a flood-only death count.",
+      "Do not imply the MVP has operational landslide prediction."
+    ]
+  },
+  {
+    "id": "AV-CM-KUM-20260805",
+    "country": "CMR",
+    "title": "Kumba flooding",
+    "record_type": "incident_report",
+    "event_dates": {
+      "start": "2026-08-05",
+      "end": null,
+      "precision": "day_reported"
+    },
+    "location_names": [
+      "Kumba"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "CM07"
+    ],
+    "summary": "Voice of Nature reports flooding in Kumba during the same August rain episode affecting Limbe.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "episode_link": "AV-CM-LIM-20260805",
+    "coverage": "new_locality",
+    "review_notes": [
+      "Single NGO report read; independent confirmation and town-specific photos still needed. Do not reuse a Limbe image as Kumba evidence."
+    ]
+  },
+  {
+    "id": "AV-GH-ACC-20260629",
+    "country": "GHA",
+    "title": "Greater Accra June 29 floods",
+    "record_type": "incident_episode",
+    "event_dates": {
+      "start": "2026-06-29",
+      "end": null,
+      "precision": "day"
+    },
+    "location_names": [
+      "Accra",
+      "Tema",
+      "Afienya",
+      "Tse Addo"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "GH01",
+      "GH02",
+      "GH03",
+      "GH17",
+      "GH19"
+    ],
+    "summary": "Flood reporting supports new locality-specific evidence in Afienya and Tse Addo, plus broader rescue context in Greater Accra.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "baseline_overlap": "June 29 Accra already appears in photo registry GH-ACC-2026-WC-001; enrich that event or create once if runtime event absent.",
+    "coverage": "new_AOI_required_for_Accra_not_Lower_Volta",
+    "review_notes": [
+      "Do not count each gallery or regional report as a separate disaster.",
+      "Accra evidence must not be used for Lower Volta map communities."
+    ]
+  },
+  {
+    "id": "AV-GH-TOT-20260629",
+    "country": "GHA",
+    "title": "Persistent flooding in Totopey",
+    "record_type": "locality_observation",
+    "event_dates": {
+      "start": "2026-06-29",
+      "end": null,
+      "observed_as_of": "2026-08-19",
+      "precision": "onset_day_reported"
+    },
+    "location_names": [
+      "Totopey",
+      "Ada East",
+      "Songor Lagoon"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "GH05"
+    ],
+    "summary": "An August report describes residents still unable to return home after the June 29 flooding, with water remaining around houses.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "parent_id": "AV-GH-ACC-20260629",
+    "coverage": "verify_extent_of_existing_Lower_Volta_AOI",
+    "review_notes": [
+      "Recovery publication date is not the date the flood began.",
+      "Avoid treating Songor Lagoon as Akosombo spillage without evidence."
+    ]
+  },
+  {
+    "id": "AV-GH-ANLO-2026",
+    "country": "GHA",
+    "title": "Flood impacts at Anlo Afiadenyigba",
+    "record_type": "locality_observation",
+    "event_dates": {
+      "start": null,
+      "end": null,
+      "observed_as_of": "2026-07-12",
+      "precision": "onset_unknown"
+    },
+    "location_names": [
+      "Anlo Afiadenyigba",
+      "Keta Municipality"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "GH06",
+      "GH18"
+    ],
+    "summary": "July reporting describes inundated homes and schools and receding water after Keta Lagoon floodgates opened.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "possible_episode": "late_June_2026_Volta_flooding",
+    "coverage": "new_locality_or_AOI_expansion",
+    "review_notes": [
+      "Do not infer cholera cases from a report expressing concern about disease risk."
+    ]
+  },
+  {
+    "id": "AV-GH-WETA-2026",
+    "country": "GHA",
+    "title": "Weta rice-farming flood impacts",
+    "record_type": "locality_observation",
+    "event_dates": {
+      "start": null,
+      "end": null,
+      "observed_as_of": "2026-07-16",
+      "precision": "onset_unknown"
+    },
+    "location_names": [
+      "Weta",
+      "Ketu North"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "GH07"
+    ],
+    "summary": "A July report documents submerged rice fields, damaged farm access and warehouses in Weta.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "possible_episode": "late_June_2026_Volta_flooding",
+    "coverage": "new_locality",
+    "review_notes": [
+      "Publication is July 16; the article does not establish exact onset.",
+      "Reported cultivated area, affected acres and household counts describe different scopes; do not interchange them."
+    ]
+  },
+  {
+    "id": "AV-GH-SAM-202606",
+    "country": "GHA",
+    "title": "Samreboi and Asankragwa flooding",
+    "record_type": "incident_report",
+    "event_dates": {
+      "start": null,
+      "end": null,
+      "observed_as_of": "2026-06-19",
+      "precision": "mid_June"
+    },
+    "location_names": [
+      "Samreboi",
+      "Asankragwa",
+      "Wassa Amenfi West"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "GH08",
+      "GH01"
+    ],
+    "summary": "NADMO, quoted by Citi Newsroom, attributes flooding to the Samre and Tano rivers overflowing after rain; more than 24 buildings reportedly collapsed.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "coverage": "new_Western_Region_AOI",
+    "review_notes": [
+      "One source groups Samreboi under Western North; Citi identifies Wassa Amenfi West in Western. Verify administrative assignment from boundary data."
+    ]
+  },
+  {
+    "id": "AV-GH-CENT-202606",
+    "country": "GHA",
+    "title": "Central Region June rain-related disasters",
+    "record_type": "regional_aggregate",
+    "event_dates": {
+      "start": null,
+      "end": null,
+      "observed_as_of": "2026-06-23",
+      "precision": "June_mid_to_late"
+    },
+    "location_names": [
+      "Cape Coast",
+      "Amamoma",
+      "Ayensu",
+      "Kwaprow",
+      "Apewosika",
+      "Central Region"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "GH09"
+    ],
+    "summary": "NADMO reporting covers flooding alongside structural collapses and other rain-related hazards across multiple districts.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "hazards": [
+      "flood",
+      "landslide",
+      "building_collapse",
+      "other_rain_related"
+    ],
+    "coverage": "new_region",
+    "review_notes": [
+      "A regional aggregate is not a single flood polygon or a set of camera locations.",
+      "Do not mix this all-hazards tally with national June-29-only counts."
+    ]
+  },
+  {
+    "id": "AV-GH-NP-20250805",
+    "country": "GHA",
+    "title": "Nsawam–Pokuase road flooding",
+    "record_type": "incident_report",
+    "event_dates": {
+      "start": "2025-08-05",
+      "end": null,
+      "observed_as_of": "2025-08-06",
+      "precision": "night"
+    },
+    "location_names": [
+      "Nsawam–Pokuase road"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "GH10"
+    ],
+    "summary": "A dated Channel One photo gallery documents flooded road sections and stranded vehicles after overnight rainfall.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "coverage": "new_road_corridor",
+    "review_notes": [
+      "New to supplied records, but historical August 2025 footage; never label 2026."
+    ]
+  },
+  {
+    "id": "AV-GH-WEI-202609",
+    "country": "GHA",
+    "title": "Weija downstream flood assessment",
+    "record_type": "assessment",
+    "event_dates": {
+      "start": null,
+      "end": null,
+      "observed_as_of": "2026-09-09",
+      "precision": "onset_unknown"
+    },
+    "location_names": [
+      "Communities downstream of Weija Dam"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "GH12"
+    ],
+    "summary": "NADMO discusses flood impacts and encroached buffer zones during a September assessment.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "coverage": "new_Weija_AOI",
+    "review_notes": [
+      "Assessment date confirmed; new flood onset, town list, inundation extent and photo capture dates not established. Keep report card until resolved."
+    ]
+  },
+  {
+    "id": "AV-GH-ACC-UPDATE-20260824",
+    "country": "GHA",
+    "title": "Ghana June flooding national impact update",
+    "record_type": "regional_aggregate",
+    "event_dates": {
+      "start": "2026-06-29",
+      "end": null,
+      "observed_as_of": "2026-08-24",
+      "precision": "national_reporting_scope"
+    },
+    "location_names": [
+      "Ghana — seven regions"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "GH16"
+    ],
+    "summary": "An August ministerial update revises national impacts; preserve its as-of date and original reporting scope.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "parent_id": "AV-GH-ACC-20260629",
+    "reported_metrics": [
+      {
+        "metric": "affected_people",
+        "value": 91989,
+        "source_id": "GH16",
+        "scope": "national_report",
+        "as_of": "2026-08-24"
+      },
+      {
+        "metric": "deaths_reported",
+        "value": 39,
+        "source_id": "GH16",
+        "scope": "national_report",
+        "as_of": "2026-08-24"
+      }
+    ],
+    "review_notes": [
+      "Not comparable automatically to early July displaced-person totals.",
+      "Regional counts in article do not fully reconcile with headline totals; retain the discrepancy and seek primary official update."
+    ]
+  },
+  {
+    "id": "AV-GH-CIRCLE-20260629",
+    "country": "GHA",
+    "title": "Circle Plastic Market flood and fire aftermath",
+    "record_type": "compound_incident",
+    "event_dates": {
+      "start": "2026-06-29",
+      "end": null,
+      "precision": "day_reported"
+    },
+    "location_names": [
+      "Circle Plastic Market",
+      "Accra"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "GH15"
+    ],
+    "summary": "Later coverage describes traders rebuilding after a flood followed by fire at the market.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "parent_id": "AV-GH-ACC-20260629",
+    "hazards": [
+      "flood",
+      "fire"
+    ],
+    "review_notes": [
+      "Fire damage and trader portraits must not be labeled floodwater observations."
+    ]
+  },
+  {
+    "id": "AV-GH-BAGRE-2026",
+    "country": "GHA",
+    "title": "Bagre–White Volta warnings and Daboya monitoring",
+    "record_type": "warning_sequence",
+    "event_dates": {
+      "start": null,
+      "end": null,
+      "precision": "advisories_not_confirmed_inundation"
+    },
+    "location_names": [
+      "White Volta basin",
+      "Daboya–Sisipe crossing",
+      "North East Region",
+      "Northern Region"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "GH13",
+      "GH14",
+      "GH11"
+    ],
+    "summary": "August warning and postponement reports are followed by September monitoring at Daboya.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "coverage": "existing_White_Volta_context",
+    "review_notes": [
+      "No verified community inundation is established by these advisories.",
+      "Keep Aug 9 planned release, Aug 11 postponement and Sep 4 monitoring as separate observations; release status is inconsistent.",
+      "Do not import conflicting reservoir levels or arithmetic as sensor data."
+    ]
+  },
+  {
+    "id": "AV-CM-WARN-20260916",
+    "country": "CMR",
+    "title": "Cameroon seasonal flood and landslide warning",
+    "record_type": "warning",
+    "event_dates": {
+      "start": "2026-09",
+      "end": "2026-11",
+      "precision": "forecast_validity_season"
+    },
+    "location_names": [
+      "Cameroon — nine regions cited"
+    ],
+    "coordinates": null,
+    "geometry": null,
+    "sources": [
+      "CM08"
+    ],
+    "summary": "Press reporting relays ONACC seasonal forecasts and MINHDU warnings for flood-prone towns and unstable slopes.",
+    "retrieved_at": "2026-09-19",
+    "verification": "source_reported_not_field_verified",
+    "flood_extent_available": false,
+    "prediction_training_ready": false,
+    "baseline_status": "not_in_audited_event_history",
+    "count_as_independent_event": false,
+    "coverage": "warning_context_only",
+    "review_notes": [
+      "Retrieve the original bulletins before issuing public alerts.",
+      "Forecast risk does not establish observed flooding in those locations."
+    ]
+  }
+]

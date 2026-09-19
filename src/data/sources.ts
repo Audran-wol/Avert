@@ -17,7 +17,7 @@ export interface SourceEntry {
 export const INTEGRATION_LABEL: Record<Integration, string> = {
   real: "Fetched live",
   curated: "Real value · manual",
-  modeled: "Modeled by FloodOps",
+  modeled: "Modeled by Avert",
   manual: "Manual / cited",
   planned: "Planned",
 };

@@ -1,0 +1,50 @@
+[
+  {
+    "file": "docs/avert-refactor/references/01-monitor.png",
+    "width": 1586,
+    "height": 992,
+    "sha256": "01bfb0d47cd285d65c0aceb92f4aaecd54ac0ae4c7b76d9e4cab95b41ddd6977"
+  },
+  {
+    "file": "docs/avert-refactor/references/02-communities.png",
+    "width": 1586,
+    "height": 992,
+    "sha256": "570115264f2e6983e6de67c9337c787982ab80f35145603d53777db82d68d696"
+  },
+  {
+    "file": "docs/avert-refactor/references/03-evidence.png",
+    "width": 1586,
+    "height": 992,
+    "sha256": "99352c06d7fa2f367ba66f022e06dc9c98406b01389149644b9b4504183b71ee"
+  },
+  {
+    "file": "docs/avert-refactor/references/04-ai-assistant.png",
+    "width": 1586,
+    "height": 992,
+    "sha256": "a0d9f69d3f7882cfe39560df580a7ea449a872ab2d463854941ef2e2a72eba40"
+  },
+  {
+    "file": "docs/avert-refactor/references/05-alert-composer.png",
+    "width": 1586,
+    "height": 992,
+    "sha256": "510c244fdf304ae11f971af91037cf51b0de0ade498b104229ebb3358a276b07"
+  },
+  {
+    "file": "docs/avert-refactor/references/06-simulation-results.png",
+    "width": 1586,
+    "height": 992,
+    "sha256": "681d3e4cab6c49de8bd4db3bc62fa480ab381889a93dd74bb88d008758594f4b"
+  },
+  {
+    "file": "docs/avert-refactor/references/07-account.png",
+    "width": 1586,
+    "height": 992,
+    "sha256": "13b4db495c9477ce6e395c8af6e0298f32c88b438d2ed6fa6f513cdb65dea22f"
+  },
+  {
+    "file": "docs/avert-refactor/references/08-preferences.png",
+    "width": 1586,
+    "height": 992,
+    "sha256": "42ad188678f1f4edef8d7420569800dd5b66a872568e42d53ad9efa583c41e87"
+  }
+]

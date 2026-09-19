@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import maplibregl, { Map as MLMap, type StyleSpecification } from "maplibre-gl";
 import { useStore, type Basemap, type Mode } from "../store";
+import { usePathname } from "../platform/router";
+import { usePreferencesStore } from "../stores/preferencesStore";
 import { getEvent } from "../data/flood";
 import { getRegion, communityById } from "../data/regions";
 import { computeStep } from "../services/exposure";
@@ -17,15 +19,27 @@ const RIVER_SRC = "rivers";
 
 const STREETS = "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json";
 const DARK = "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json";
-const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_KEY;
+// Imagery is rendered through our own style so the raster paint can be tuned. Raw satellite
+// tiles are far too saturated/bright to sit under flood overlays and panel text — pulling
+// saturation and brightness down gives the calm dark-terrain look of the approved references.
 const SATELLITE: StyleSpecification = {
   version: 8,
-  sources: { esri: { type: "raster", tiles: ["https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"], tileSize: 256, maxzoom: 19, attribution: "© Esri" } },
-  layers: [{ id: "bg", type: "background", paint: { "background-color": "#05070a" } }, { id: "esri", type: "raster", source: "esri" }],
+  // same font server the CARTO basemaps use, so one text-font stack works on every basemap
+  glyphs: "https://tiles.basemaps.cartocdn.com/fonts/{fontstack}/{range}.pbf",
+  sources: {
+    esri: { type: "raster", tiles: ["https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"], tileSize: 256, maxzoom: 19, attribution: "© Esri" },
+  },
+  layers: [
+    { id: "bg", type: "background", paint: { "background-color": "#05070a" } },
+    {
+      id: "esri", type: "raster", source: "esri",
+      paint: { "raster-saturation": -0.45, "raster-brightness-max": 0.72, "raster-contrast": -0.08, "raster-opacity": 0.95 },
+    },
+  ],
 };
 function styleFor(b: Basemap): string | StyleSpecification {
   if (b === "dark") return DARK;
-  if (b === "satellite") return MAPTILER_KEY ? `https://api.maptiler.com/maps/hybrid/style.json?key=${MAPTILER_KEY}` : SATELLITE;
+  if (b === "satellite") return SATELLITE;
   return STREETS;
 }
 
@@ -66,26 +80,43 @@ function addLayers(map: MLMap) {
   // real district boundaries (geoBoundaries) as quiet context
   map.addSource("districts", { type: "geojson", data: DISTRICTS_GEO });
   // mid-gray reads on light (streets) and dark (satellite) basemaps alike
-  map.addLayer({ id: "district-line", type: "line", source: "districts", paint: { "line-color": "#64748b", "line-opacity": 0.45, "line-width": 1, "line-dasharray": [2, 2] } });
+  map.addLayer({ id: "district-line", type: "line", source: "districts", paint: { "line-color": "#5b6b7a", "line-opacity": 0.28, "line-width": 1, "line-dasharray": [2, 3] } });
 
   map.addSource(RIVER_SRC, { type: "geojson", data: regionOf(useStore.getState().eventId).rivers });
-  map.addLayer({ id: "river-line", type: "line", source: RIVER_SRC, paint: { "line-color": "#3CBDE6", "line-opacity": 0.5, "line-width": ["interpolate", ["linear"], ["zoom"], 7, 0.6, 12, 2] } });
+  map.addLayer({ id: "river-line", type: "line", source: RIVER_SRC, paint: { "line-color": "#4aa6d6", "line-opacity": 0.42, "line-width": ["interpolate", ["linear"], ["zoom"], 7, 0.6, 12, 2] } });
 
   map.addSource(FLOOD_SRC, { type: "geojson", data: floodGeoJSON(useStore.getState().eventId, useStore.getState().stepIndex, useStore.getState().mode) });
-  map.addLayer({ id: "flood-fill", type: "fill", source: FLOOD_SRC, paint: { "fill-color": "#2b8fd6", "fill-opacity": 0.38 } });
-  map.addLayer({ id: "flood-line", type: "line", source: FLOOD_SRC, paint: { "line-color": "#8fd4ff", "line-width": 1, "line-opacity": 0.7 } });
+  map.addLayer({ id: "flood-fill", type: "fill", source: FLOOD_SRC, paint: { "fill-color": "#4a9fd8", "fill-opacity": 0.3 } });
+  map.addLayer({ id: "flood-line", type: "line", source: FLOOD_SRC, paint: { "line-color": "#8fd4ff", "line-width": 1, "line-opacity": 0.55 } });
 
   const st0 = useStore.getState();
   map.addSource(COMM_SRC, { type: "geojson", data: communityGeoJSON(st0.eventId, st0.stepIndex, st0.mode) });
-  map.addLayer({ id: "comm-halo", type: "circle", source: COMM_SRC, filter: ["==", ["get", "id"], "___none___"], paint: { "circle-radius": 13, "circle-color": "rgba(0,0,0,0)", "circle-stroke-color": "#42C8E8", "circle-stroke-width": 2 } });
+  map.addLayer({ id: "comm-halo", type: "circle", source: COMM_SRC, filter: ["==", ["get", "id"], "___none___"], paint: { "circle-radius": 14, "circle-color": "rgba(0,0,0,0)", "circle-stroke-color": "#3b87f0", "circle-stroke-width": 2.5, "circle-stroke-opacity": 0.9 } });
   map.addLayer({
     id: "comm-dot", type: "circle", source: COMM_SRC,
     paint: {
-      "circle-radius": ["interpolate", ["linear"], ["zoom"], 8, ["case", ["get", "minor"], 2.5, 4], 13, ["case", ["get", "minor"], 4, 7]],
+      // "safe"/low-risk places stay deliberately tiny and dim: at 200+ communities the map is
+      // unreadable if every settlement competes for attention. Signal scales with status.
+      "circle-radius": ["interpolate", ["linear"], ["zoom"], 8, ["case", ["get", "minor"], 1.8, 4.5], 13, ["case", ["get", "minor"], 3, 7.5]],
       "circle-color": ["get", "color"],
-      "circle-stroke-color": "#05070a", "circle-stroke-width": 1,
-      "circle-opacity": ["case", ["get", "minor"], 0.6, 1],
+      "circle-stroke-color": "#05070a", "circle-stroke-width": 1.25,
+      "circle-opacity": ["case", ["get", "minor"], 0.35, 0.95],
+      "circle-stroke-opacity": ["case", ["get", "minor"], 0.3, 0.85],
     },
+  });
+  // Names for the communities that actually matter at this timestep, so the map is narratable
+  // ("here is Volo") without hovering. Suppressed for minor/low-risk points to limit clutter.
+  map.addLayer({
+    id: "comm-label", type: "symbol", source: COMM_SRC,
+    filter: ["!", ["get", "minor"]],
+    layout: {
+      "text-field": ["get", "name"],
+      "text-font": ["Open Sans Regular", "Noto Sans Regular"],
+      "text-size": ["interpolate", ["linear"], ["zoom"], 8, 10, 13, 13],
+      "text-offset": [0, 1.1], "text-anchor": "top",
+      "text-allow-overlap": false, "text-optional": true,
+    },
+    paint: { "text-color": "#eef3f7", "text-halo-color": "#04080c", "text-halo-width": 1.6, "text-halo-blur": 0.4 },
   });
 }
 
@@ -99,8 +130,11 @@ export default function MapView() {
   const ref = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MLMap | null>(null);
   const appliedBasemap = useRef<Basemap>(useStore.getState().basemap);
-  const { selectedId, basemap, stepIndex, mode, eventId, panelOpen } = useStore();
+  const { selectedId, basemap, stepIndex, mode, eventId, askAvertOpen } = useStore();
   const selectCommunity = useStore((s) => s.selectCommunity);
+  const path = usePathname();
+  const units = usePreferencesStore((s) => s.preferences.units);
+  const scaleRef = useRef<maplibregl.ScaleControl | null>(null);
 
   useEffect(() => {
     if (!ref.current) return;
@@ -112,7 +146,9 @@ export default function MapView() {
     mapRef.current = map;
     mapBus.map = map;
     if (import.meta.env.DEV) { (window as unknown as Record<string, unknown>).__map = map; (window as unknown as Record<string, unknown>).__store = useStore; }
-    map.addControl(new maplibregl.ScaleControl({ maxWidth: 90, unit: "metric" }), "bottom-left");
+    const scale = new maplibregl.ScaleControl({ maxWidth: 90, unit: usePreferencesStore.getState().preferences.units });
+    scaleRef.current = scale;
+    map.addControl(scale, "bottom-left");
     map.on("error", (e) => console.error("[maplibre]", e.error?.message ?? e));
     map.on("styledata", () => ensureLayers(map));
     map.on("load", () => { map.resize(); ensureLayers(map); });
@@ -131,6 +167,15 @@ export default function MapView() {
 
   useEffect(() => {
     const map = mapRef.current;
+    if (!map || !scaleRef.current) return;
+    map.removeControl(scaleRef.current);
+    const scale = new maplibregl.ScaleControl({ maxWidth: 90, unit: units });
+    scaleRef.current = scale;
+    map.addControl(scale, "bottom-left");
+  }, [units]);
+
+  useEffect(() => {
+    const map = mapRef.current;
     if (!map || basemap === appliedBasemap.current) return;
     appliedBasemap.current = basemap;
     // setStyle wipes custom sources/layers; the generic styledata handler is unreliable for
@@ -142,8 +187,10 @@ export default function MapView() {
   useEffect(() => {
     const map = mapRef.current;
     if (!map || !map.isStyleLoaded()) return;
+    // the inspector/community list dock as real flex siblings (not overlays), so their
+    // mount/unmount resizes the map container and the camera needs a resize to match.
     requestAnimationFrame(() => map.resize());
-  }, [panelOpen]);
+  }, [!!selectedId, path, askAvertOpen]);
 
   // timeline step / mode → update flood extent + community colouring
   useEffect(() => {

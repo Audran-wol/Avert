@@ -1,0 +1,37 @@
+[
+  {
+    "name": "MyJoyOnline",
+    "country": "GHA",
+    "url": "https://www.myjoyonline.com/feed/",
+    "checked_at": "2026-09-19",
+    "valid_rss": true,
+    "item_count": 50,
+    "last_build_date": "Sat, 19 Sep 2026 02:42:39 +0000"
+  },
+  {
+    "name": "Journal du Cameroun",
+    "country": "CMR",
+    "url": "https://fr.journalducameroun.com/feed/",
+    "checked_at": "2026-09-19",
+    "valid_rss": true,
+    "item_count": 10,
+    "last_build_date": "Fri, 18 Sep 2026 17:56:34 +0000"
+  },
+  {
+    "name": "Africanews",
+    "country": "both",
+    "url": "https://www.africanews.com/feed/rss?themes=news",
+    "checked_at": "2026-09-19",
+    "valid_rss": true,
+    "item_count": 50,
+    "last_build_date": null
+  },
+  {
+    "name": "Citi Newsroom attempted feed",
+    "country": "GHA",
+    "url": "https://www.citinewsroom.com/feed/",
+    "checked_at": "2026-09-19",
+    "valid_rss": false,
+    "note": "Returned HTML rather than valid RSS; use article search or a verified feed advertised by publisher."
+  }
+]

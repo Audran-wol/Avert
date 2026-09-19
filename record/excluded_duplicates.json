@@ -1,0 +1,36 @@
+[
+  {
+    "id": "AV-M-035",
+    "source_id": "GH11",
+    "source_page_url": "https://www.myjoyonline.com/nadmo-intensifies-monitoring-in-daboya-as-bagre-dam-spillage-raises-flood-fears/",
+    "direct_media_url": "https://www.myjoyonline.com/wp-content/uploads/2026/09/image-544-753x424.png",
+    "media_type": "photo",
+    "label": "Daboya–Sisipe crossing / assessment visit — publisher image 1",
+    "location_name": "Daboya–Sisipe crossing / assessment visit",
+    "coordinates": null,
+    "geographic_precision": "named_locality",
+    "related_record_id": "AV-GH-BAGRE-2026",
+    "capture_date": null,
+    "published_at": "2026-09-04",
+    "retrieved_at": "2026-09-19",
+    "evidence_role": "monitoring_visit",
+    "origin": "publisher_photo_not_forensically_authenticated",
+    "rights_status": "permission_not_verified",
+    "credit": "MyJoyOnline / Deborah Quarcoo",
+    "display_ready": false,
+    "download_for_publication": false,
+    "baseline_url_match": false,
+    "notes": "Location supported at article level; exact viewpoint not established. Cropped/resized copies must be deduplicated before gallery display.",
+    "technical_verification": {
+      "content_type": "image/png",
+      "http_status": 200,
+      "width": 753,
+      "height": 424,
+      "sha256": "1eafa88877adcdeca368036eddb70bcba7e6491ee47ab64edde5ac98c019cdc0",
+      "bytes": 481481,
+      "image_decoded": true,
+      "dhash": "5dada464705965a6"
+    },
+    "excluded_reason": "Cropped/resized version of AV-M-038, confirmed in visual contact sheet."
+  }
+]
