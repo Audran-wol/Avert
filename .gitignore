@@ -5,6 +5,7 @@ dist
 
 .vercel
 *.md
+!README.md
 
 # personal doc, do not publish
 src/262340*.pdf
