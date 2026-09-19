@@ -103,4 +103,4 @@ record/         provenance for the September 2026 evidence pack merged into the 
 
 ---
 
-Built for the Pan-African AI Summit Hack-AI-Thon, September 2026.
+Built by Audran-wol for the Pan-African AI Summit Hack-AI-Thon, September 2026.
